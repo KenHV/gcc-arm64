@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "12.1.1 20220531 (Stable)")
+(!version  "12.1.1 20220611 (Stable)")
 (!srcdir  "../../gcc/gcc")
 (!languages 10 ada c cp d fortran go jit lto objc objcp)
 (!fileslist 226 0
@@ -27911,7 +27911,7 @@
    (!type already_seen 1993)
   )
   gc_pointed_to "tinst_level"
-  (!srcfileloc  "cp/pt.cc" 9578)
+  (!srcfileloc  "cp/pt.cc" 9580)
   (!fields 8 
    (!pair  "next"
     (!type already_seen 1994)
@@ -28230,19 +28230,19 @@
   (!fields 4 
    (!pair  "decl"
     (!type already_seen 23)
-    (!srcfileloc  "cp/cp-tree.h" 8392)
+    (!srcfileloc  "cp/cp-tree.h" 8394)
     nil )
    (!pair  "body"
     (!type already_seen 23)
-    (!srcfileloc  "cp/cp-tree.h" 8393)
+    (!srcfileloc  "cp/cp-tree.h" 8395)
     nil )
    (!pair  "parms"
     (!type already_seen 23)
-    (!srcfileloc  "cp/cp-tree.h" 8394)
+    (!srcfileloc  "cp/cp-tree.h" 8396)
     nil )
    (!pair  "result"
     (!type already_seen 23)
-    (!srcfileloc  "cp/cp-tree.h" 8395)
+    (!srcfileloc  "cp/cp-tree.h" 8397)
     nil )
   )
   (!options 
@@ -29125,7 +29125,7 @@
   nil 0 nil nil )
  
  (!type struct 2107 nil  gc_used "typename_hasher"
-  (!srcfileloc  "cp/decl.cc" 4039)
+  (!srcfileloc  "cp/decl.cc" 4043)
   (!fields 0 )
   nil 516 nil nil )
  
@@ -29134,11 +29134,11 @@
    (!type already_seen 2108)
   )
   gc_pointed_to "hash_table<typename_hasher>"
-  (!srcfileloc  "cp/decl.cc" 4039)
+  (!srcfileloc  "cp/decl.cc" 4043)
   (!fields 1 
    (!pair  "typename_hasher"
     (!type already_seen 2107)
-    (!srcfileloc  "cp/decl.cc" 4039)
+    (!srcfileloc  "cp/decl.cc" 4043)
     nil )
   )
  )
@@ -29808,7 +29808,7 @@
    (!type already_seen 2203)
   )
   gc_pointed_to "pending_template"
-  (!srcfileloc  "cp/pt.cc" 9587)
+  (!srcfileloc  "cp/pt.cc" 9589)
   (!fields 2 
    (!pair  "next"
     (!type already_seen 2204)
@@ -29880,15 +29880,15 @@
    (!type already_seen 2216)
   )
   gc_pointed_to "hash_map<tree,tree_pair_p>"
-  (!srcfileloc  "cp/pt.cc" 29837)
+  (!srcfileloc  "cp/pt.cc" 29875)
   (!fields 2 
    (!pair  "tree_pair_p"
     (!type already_seen 535)
-    (!srcfileloc  "cp/pt.cc" 29837)
+    (!srcfileloc  "cp/pt.cc" 29875)
     nil )
    (!pair  "tree"
     (!type already_seen 23)
-    (!srcfileloc  "cp/pt.cc" 29837)
+    (!srcfileloc  "cp/pt.cc" 29875)
     nil )
   )
  )
@@ -31033,15 +31033,15 @@
   nil )
  (!pair  "hash_map<tree,tree_pair_p>"
   (!type already_seen 2216)
-  (!srcfileloc  "cp/pt.cc" 29837)
+  (!srcfileloc  "cp/pt.cc" 29875)
   nil )
  (!pair  "pending_template"
   (!type already_seen 2203)
-  (!srcfileloc  "cp/pt.cc" 9587)
+  (!srcfileloc  "cp/pt.cc" 9589)
   nil )
  (!pair  "tinst_level"
   (!type already_seen 1993)
-  (!srcfileloc  "cp/pt.cc" 9578)
+  (!srcfileloc  "cp/pt.cc" 9580)
   nil )
  (!pair  "spec_hash_table"
   (!type already_seen 2206)
@@ -31305,11 +31305,11 @@
   nil )
  (!pair  "typename_hasher"
   (!type already_seen 2107)
-  (!srcfileloc  "cp/decl.cc" 4039)
+  (!srcfileloc  "cp/decl.cc" 4043)
   nil )
  (!pair  "hash_table<typename_hasher>"
   (!type already_seen 2108)
-  (!srcfileloc  "cp/decl.cc" 4039)
+  (!srcfileloc  "cp/decl.cc" 4043)
   nil )
  (!pair  "incomplete_var"
   (!type already_seen 2102)
@@ -35414,11 +35414,11 @@
   nil )
  (!pair  "d_eh_personality_decl"
   (!type already_seen 23)
-  (!srcfileloc  "d/d-lang.cc" 1896)
+  (!srcfileloc  "d/d-lang.cc" 1900)
   nil )
  (!pair  "d_keep_list"
   (!type already_seen 23)
-  (!srcfileloc  "d/d-lang.cc" 1885)
+  (!srcfileloc  "d/d-lang.cc" 1889)
   nil )
  (!pair  "global_declarations"
   (!type already_seen 84)
@@ -35528,60 +35528,60 @@
   nil )
  (!pair  "dguide_cache"
   (!type already_seen 2217)
-  (!srcfileloc  "cp/pt.cc" 29837)
+  (!srcfileloc  "cp/pt.cc" 29875)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "explicit_specifier_map"
   (!type already_seen 932)
-  (!srcfileloc  "cp/pt.cc" 13903)
+  (!srcfileloc  "cp/pt.cc" 13932)
   (!options 
    (!option cache string  "")
   )
  )
  (!pair  "defarg_inst"
   (!type already_seen 1551)
-  (!srcfileloc  "cp/pt.cc" 13766)
+  (!srcfileloc  "cp/pt.cc" 13795)
   (!options 
    (!option cache string  "")
   )
  )
  (!pair  "last_error_tinst_level"
   (!type already_seen 1994)
-  (!srcfileloc  "cp/pt.cc" 11042)
+  (!srcfileloc  "cp/pt.cc" 11044)
   nil )
  (!pair  "pending_template_freelist_head"
   (!type already_seen 2204)
-  (!srcfileloc  "cp/pt.cc" 9587)
+  (!srcfileloc  "cp/pt.cc" 9589)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "tinst_level_freelist_head"
   (!type already_seen 1994)
-  (!srcfileloc  "cp/pt.cc" 9578)
+  (!srcfileloc  "cp/pt.cc" 9580)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "tree_list_freelist_head"
   (!type already_seen 23)
-  (!srcfileloc  "cp/pt.cc" 9569)
+  (!srcfileloc  "cp/pt.cc" 9571)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "defaulted_ttp_cache"
   (!type already_seen 393)
-  (!srcfileloc  "cp/pt.cc" 7852)
+  (!srcfileloc  "cp/pt.cc" 7854)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "tparm_obj_values"
   (!type already_seen 393)
-  (!srcfileloc  "cp/pt.cc" 7193)
+  (!srcfileloc  "cp/pt.cc" 7195)
   nil )
  (!pair  "canonical_template_parms"
   (!type already_seen 84)
@@ -35801,18 +35801,18 @@
   nil )
  (!pair  "start_cleanup_cnt"
   (!type already_seen 2)
-  (!srcfileloc  "cp/decl.cc" 9336)
+  (!srcfileloc  "cp/decl.cc" 9366)
   nil )
  (!pair  "decomp_type_table"
   (!type already_seen 932)
-  (!srcfileloc  "cp/decl.cc" 8789)
+  (!srcfileloc  "cp/decl.cc" 8819)
   (!options 
    (!option cache string  "")
   )
  )
  (!pair  "typename_htab"
   (!type already_seen 2109)
-  (!srcfileloc  "cp/decl.cc" 4039)
+  (!srcfileloc  "cp/decl.cc" 4043)
   nil )
  (!pair  "local_entities"
   (!type already_seen 84)
@@ -36019,7 +36019,7 @@
  )
  (!pair  "cv_cache"
   (!type already_seen 393)
-  (!srcfileloc  "cp/constexpr.cc" 8067)
+  (!srcfileloc  "cp/constexpr.cc" 8064)
   (!options 
    (!option deletable string  "")
   )
@@ -36057,11 +36057,11 @@
   nil )
  (!pair  "default_arg_context"
   (!type already_seen 84)
-  (!srcfileloc  "cp/call.cc" 8663)
+  (!srcfileloc  "cp/call.cc" 8668)
   nil )
  (!pair  "unemitted_tinfo_decls"
   (!type already_seen 84)
-  (!srcfileloc  "cp/cp-tree.h" 7459)
+  (!srcfileloc  "cp/cp-tree.h" 7461)
   nil )
  (!pair  "ovl_op_alternate"
   (!type array 2360 nil  gc_used "OVL_OP_MAX" 
