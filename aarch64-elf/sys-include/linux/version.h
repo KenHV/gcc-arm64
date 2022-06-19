@@ -7,4 +7,4 @@
 #define RHEL_MINOR 99
 #define RHEL_RELEASE_VERSION(a,b) (((a) << 8) + (b))
 #define RHEL_RELEASE_CODE 2403
-#define RHEL_RELEASE "14"
+#define RHEL_RELEASE "21"
