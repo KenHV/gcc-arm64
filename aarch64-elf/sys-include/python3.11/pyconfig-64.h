@@ -1523,6 +1523,9 @@
 /* Cipher suite string for PY_SSL_DEFAULT_CIPHERS=0 */
 /* #undef PY_SSL_DEFAULT_CIPHER_STRING */
 
+/* PEP 11 Support tier (1, 2, 3 or 0 for unsupported) */
+#define PY_SUPPORT_TIER 1
+
 /* Define if you want to build an interpreter with many run-time checks. */
 /* #undef Py_DEBUG */
 
