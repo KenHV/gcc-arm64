@@ -1,5 +1,5 @@
 /* Checking macros for stdio functions. Declarations only.
-   Copyright (C) 2004-2021 Free Software Foundation, Inc.
+   Copyright (C) 2004-2022 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -20,7 +20,7 @@
 #define _BITS_STDIO2_DEC_H 1
 
 #ifndef _STDIO_H
-# error "Never include <bits/stdio2-dec.h> directly; use <stdio.h> instead."
+# error "Never include <bits/stdio2-decl.h> directly; use <stdio.h> instead."
 #endif
 
 extern int __sprintf_chk (char *__restrict __s, int __flag, size_t __slen,
@@ -39,7 +39,8 @@ extern int __snprintf_chk (char *__restrict __s, size_t __n, int __flag,
     __attr_access ((__write_only__, 1, 2));
 extern int __vsnprintf_chk (char *__restrict __s, size_t __n, int __flag,
 			    size_t __slen, const char *__restrict __format,
-			    __gnuc_va_list __ap) __THROW;
+			    __gnuc_va_list __ap) __THROW
+    __attr_access ((__write_only__, 1, 2));
 
 #endif
 
@@ -107,4 +108,4 @@ extern size_t __fread_unlocked_chk (void *__restrict __ptr, size_t __ptrlen,
 				    FILE *__restrict __stream) __wur;
 #endif
 
-#endif /* bits/stdio2-dec.h.  */
+#endif /* bits/stdio2-decl.h.  */
