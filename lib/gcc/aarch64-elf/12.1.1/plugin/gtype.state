@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "12.1.1 20220806 (Stable)")
+(!version  "12.1.1 20220813 (Stable)")
 (!srcdir  "../../gcc/gcc")
 (!languages 10 ada c cp d fortran go jit lto objc objcp)
 (!fileslist 226 0
@@ -26215,35 +26215,35 @@
   nil 0 nil nil )
  
  (!type struct 1815 nil  gc_used "aarch64_simd_type_info"
-  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 710)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 716)
   (!fields 7 
    (!pair  "type"
     (!type already_seen 2)
-    (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 684)
+    (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 690)
     nil )
    (!pair  "name"
     (!type already_seen 11)
-    (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 687)
+    (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 693)
     nil )
    (!pair  "mangle"
     (!type already_seen 11)
-    (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 697)
+    (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 703)
     nil )
    (!pair  "itype"
     (!type already_seen 23)
-    (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 700)
+    (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 706)
     nil )
    (!pair  "eltype"
     (!type already_seen 23)
-    (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 703)
+    (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 709)
     nil )
    (!pair  "mode"
     (!type already_seen 2)
-    (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 706)
+    (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 712)
     nil )
    (!pair  "q"
     (!type already_seen 2)
-    (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 709)
+    (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 715)
     nil )
   )
   nil 1023 nil nil )
@@ -26252,11 +26252,11 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1817 nil  gc_unused "anonymous:../../gcc/gcc/config/aarch64/aarch64-builtins.cc:1559"nil 
+ (!type struct 1817 nil  gc_unused "anonymous:../../gcc/gcc/config/aarch64/aarch64-builtins.cc:1565"nil 
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1818 nil  gc_unused "anonymous:../../gcc/gcc/config/aarch64/aarch64-builtins.cc:1606"nil 
+ (!type struct 1818 nil  gc_unused "anonymous:../../gcc/gcc/config/aarch64/aarch64-builtins.cc:1612"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -28480,7 +28480,7 @@
    (!type already_seen 2037)
   )
   gc_pointed_to "cp_parser"
-  (!srcfileloc  "cp/parser.cc" 47574)
+  (!srcfileloc  "cp/parser.cc" 47576)
   (!fields 39 
    (!pair  "lexer"
     (!type already_seen 2023)
@@ -29800,7 +29800,7 @@
   nil 0 nil nil )
  
  (!type undefined 2202 nil  gc_unused "class_to_loc_map_t::iterator"
-  (!srcfileloc  "cp/parser.cc" 33785)
+  (!srcfileloc  "cp/parser.cc" 33787)
  )
  
  (!type struct 2203 
@@ -31061,15 +31061,15 @@
   nil )
  (!pair  "cp_parser"
   (!type already_seen 2037)
-  (!srcfileloc  "cp/parser.cc" 47574)
+  (!srcfileloc  "cp/parser.cc" 47576)
   nil )
  (!pair  "iter_t"
   (!type already_seen 2202)
-  (!srcfileloc  "cp/parser.cc" 33785)
+  (!srcfileloc  "cp/parser.cc" 33787)
   nil )
  (!pair  "class_to_loc_map_t::iterator"
   (!type already_seen 2202)
-  (!srcfileloc  "cp/parser.cc" 33785)
+  (!srcfileloc  "cp/parser.cc" 33787)
   nil )
  (!pair  "cp_parser_expression_stack"
   (!type array 2328 nil  gc_unused "NUM_PREC_VALUES" 
@@ -31807,11 +31807,11 @@
   nil )
  (!pair  "builtin_simd_arg"
   (!type already_seen 2)
-  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 1787)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 1824)
   nil )
  (!pair  "ls64_builtins_data"
   (!type already_seen 1818)
-  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 1610)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 1616)
   nil )
  (!pair  "aarch64_fcmla_laneq_builtin_datum"
   (!type already_seen 1814)
@@ -35613,11 +35613,11 @@
   nil )
  (!pair  "generic_parm_count"
   (!type already_seen 2)
-  (!srcfileloc  "cp/parser.cc" 48086)
+  (!srcfileloc  "cp/parser.cc" 48088)
   nil )
  (!pair  "the_parser"
   (!type already_seen 2038)
-  (!srcfileloc  "cp/parser.cc" 47574)
+  (!srcfileloc  "cp/parser.cc" 47576)
   nil )
  (!pair  "cp_parser_decl_specs_attrs"
   (!type already_seen 84)
@@ -36019,7 +36019,7 @@
  )
  (!pair  "cv_cache"
   (!type already_seen 393)
-  (!srcfileloc  "cp/constexpr.cc" 8071)
+  (!srcfileloc  "cp/constexpr.cc" 8077)
   (!options 
    (!option deletable string  "")
   )
@@ -36452,19 +36452,19 @@
   nil )
  (!pair  "ls64_arm_data_t"
   (!type already_seen 23)
-  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 1612)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 1618)
   nil )
  (!pair  "aarch64_simd_intXI_type_node"
   (!type already_seen 23)
-  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 724)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 730)
   nil )
  (!pair  "aarch64_simd_intCI_type_node"
   (!type already_seen 23)
-  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 723)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 729)
   nil )
  (!pair  "aarch64_simd_intOI_type_node"
   (!type already_seen 23)
-  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 722)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 728)
   nil )
  (!pair  "aarch64_simd_tuple_types"
   (!type array 2378 nil  gc_used "ARM_NEON_H_TYPES_LAST" 
@@ -36472,19 +36472,19 @@
     (!type already_seen 23)
    )
   )
-  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 720)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 726)
   nil )
  (!pair  "aarch64_simd_types"
   (!type array 2380 nil  gc_used "" 
    (!type already_seen 1815)
   )
-  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 714)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 720)
   nil )
  (!pair  "aarch64_builtin_decls"
   (!type array 2381 nil  gc_used "AARCH64_BUILTIN_MAX" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 641)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 647)
   nil )
  (!pair  "omp_requires_mask"
   (!type already_seen 2)
