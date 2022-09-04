@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "12.2.1 20220827 (Stable)")
+(!version  "12.2.1 20220903 (Stable)")
 (!srcdir  "../../gcc/gcc")
 (!languages 10 ada c cp d fortran go jit lto objc objcp)
 (!fileslist 226 0
@@ -30203,83 +30203,83 @@
   16 nil nil )
  
  (!type struct 2267 nil  gc_used "gfc_intrinsic_map_t"
-  (!srcfileloc  "fortran/trans-intrinsic.cc" 86)
+  (!srcfileloc  "fortran/trans-intrinsic.cc" 87)
   (!fields 19 
    (!pair  "id"
     (!type already_seen 2)
-    (!srcfileloc  "fortran/trans-intrinsic.cc" 52)
+    (!srcfileloc  "fortran/trans-intrinsic.cc" 53)
     nil )
    (!pair  "float_built_in"
     (!type already_seen 2)
-    (!srcfileloc  "fortran/trans-intrinsic.cc" 56)
+    (!srcfileloc  "fortran/trans-intrinsic.cc" 57)
     nil )
    (!pair  "double_built_in"
     (!type already_seen 2)
-    (!srcfileloc  "fortran/trans-intrinsic.cc" 57)
+    (!srcfileloc  "fortran/trans-intrinsic.cc" 58)
     nil )
    (!pair  "long_double_built_in"
     (!type already_seen 2)
-    (!srcfileloc  "fortran/trans-intrinsic.cc" 58)
+    (!srcfileloc  "fortran/trans-intrinsic.cc" 59)
     nil )
    (!pair  "complex_float_built_in"
     (!type already_seen 2)
-    (!srcfileloc  "fortran/trans-intrinsic.cc" 59)
+    (!srcfileloc  "fortran/trans-intrinsic.cc" 60)
     nil )
    (!pair  "complex_double_built_in"
     (!type already_seen 2)
-    (!srcfileloc  "fortran/trans-intrinsic.cc" 60)
+    (!srcfileloc  "fortran/trans-intrinsic.cc" 61)
     nil )
    (!pair  "complex_long_double_built_in"
     (!type already_seen 2)
-    (!srcfileloc  "fortran/trans-intrinsic.cc" 61)
+    (!srcfileloc  "fortran/trans-intrinsic.cc" 62)
     nil )
    (!pair  "libm_name"
     (!type already_seen 2)
-    (!srcfileloc  "fortran/trans-intrinsic.cc" 66)
+    (!srcfileloc  "fortran/trans-intrinsic.cc" 67)
     nil )
    (!pair  "complex_available"
     (!type already_seen 2)
-    (!srcfileloc  "fortran/trans-intrinsic.cc" 69)
+    (!srcfileloc  "fortran/trans-intrinsic.cc" 70)
     nil )
    (!pair  "is_constant"
     (!type already_seen 2)
-    (!srcfileloc  "fortran/trans-intrinsic.cc" 72)
+    (!srcfileloc  "fortran/trans-intrinsic.cc" 73)
     nil )
    (!pair  "name"
     (!type already_seen 11)
-    (!srcfileloc  "fortran/trans-intrinsic.cc" 75)
+    (!srcfileloc  "fortran/trans-intrinsic.cc" 76)
     nil )
    (!pair  "real4_decl"
     (!type already_seen 23)
-    (!srcfileloc  "fortran/trans-intrinsic.cc" 78)
+    (!srcfileloc  "fortran/trans-intrinsic.cc" 79)
     nil )
    (!pair  "real8_decl"
     (!type already_seen 23)
-    (!srcfileloc  "fortran/trans-intrinsic.cc" 79)
+    (!srcfileloc  "fortran/trans-intrinsic.cc" 80)
     nil )
    (!pair  "real10_decl"
     (!type already_seen 23)
-    (!srcfileloc  "fortran/trans-intrinsic.cc" 80)
+    (!srcfileloc  "fortran/trans-intrinsic.cc" 81)
     nil )
    (!pair  "real16_decl"
     (!type already_seen 23)
-    (!srcfileloc  "fortran/trans-intrinsic.cc" 81)
+    (!srcfileloc  "fortran/trans-intrinsic.cc" 82)
     nil )
    (!pair  "complex4_decl"
     (!type already_seen 23)
-    (!srcfileloc  "fortran/trans-intrinsic.cc" 82)
+    (!srcfileloc  "fortran/trans-intrinsic.cc" 83)
     nil )
    (!pair  "complex8_decl"
     (!type already_seen 23)
-    (!srcfileloc  "fortran/trans-intrinsic.cc" 83)
+    (!srcfileloc  "fortran/trans-intrinsic.cc" 84)
     nil )
    (!pair  "complex10_decl"
     (!type already_seen 23)
-    (!srcfileloc  "fortran/trans-intrinsic.cc" 84)
+    (!srcfileloc  "fortran/trans-intrinsic.cc" 85)
     nil )
    (!pair  "complex16_decl"
     (!type already_seen 23)
-    (!srcfileloc  "fortran/trans-intrinsic.cc" 85)
+    (!srcfileloc  "fortran/trans-intrinsic.cc" 86)
     nil )
   )
   nil 16 nil nil )
@@ -30933,7 +30933,7 @@
   nil )
  (!pair  "gfc_intrinsic_map_t"
   (!type already_seen 2267)
-  (!srcfileloc  "fortran/trans-intrinsic.cc" 87)
+  (!srcfileloc  "fortran/trans-intrinsic.cc" 88)
   nil )
  (!pair  "module_hasher"
   (!type already_seen 2260)
@@ -33449,7 +33449,7 @@
   nil )
  (!pair  "cselib_expand_callback"
   (!type already_seen 2)
-  (!srcfileloc  "cselib.h" 88)
+  (!srcfileloc  "cselib.h" 89)
   nil )
  (!pair  "sreal"
   (!type already_seen 1020)
@@ -35364,7 +35364,7 @@
   (!type array 2353 nil  gc_used "" 
    (!type already_seen 2267)
   )
-  (!srcfileloc  "fortran/trans-intrinsic.cc" 116)
+  (!srcfileloc  "fortran/trans-intrinsic.cc" 117)
   nil )
  (!pair  "module_htab"
   (!type already_seen 2262)
@@ -36609,21 +36609,21 @@
   nil )
  (!pair  "aarch64_sls_shared_thunks_needed"
   (!type already_seen 2)
-  (!srcfileloc  "config/aarch64/aarch64.cc" 26956)
+  (!srcfileloc  "config/aarch64/aarch64.cc" 26957)
   nil )
  (!pair  "aarch64_sls_shared_thunks"
   (!type array 2386 nil  gc_used "30" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "config/aarch64/aarch64.cc" 26955)
+  (!srcfileloc  "config/aarch64/aarch64.cc" 26956)
   nil )
  (!pair  "va_list_type"
   (!type already_seen 23)
-  (!srcfileloc  "config/aarch64/aarch64.cc" 19422)
+  (!srcfileloc  "config/aarch64/aarch64.cc" 19423)
   nil )
  (!pair  "aarch64_previous_fndecl"
   (!type already_seen 23)
-  (!srcfileloc  "config/aarch64/aarch64.cc" 18398)
+  (!srcfileloc  "config/aarch64/aarch64.cc" 18399)
   nil )
  (!pair  "tls_get_addr_libfunc"
   (!type already_seen 99)
@@ -37562,7 +37562,7 @@
   nil )
  (!pair  "callmem"
   (!type already_seen 99)
-  (!srcfileloc  "cselib.cc" 237)
+  (!srcfileloc  "cselib.cc" 238)
   nil )
  (!pair  "bitmap_ggc_free"
   (!type already_seen 388)
@@ -37573,11 +37573,11 @@
  )
  (!pair  "frame_set"
   (!type already_seen 2)
-  (!srcfileloc  "alias.cc" 1359)
+  (!srcfileloc  "alias.cc" 1373)
   nil )
  (!pair  "varargs_set"
   (!type already_seen 2)
-  (!srcfileloc  "alias.cc" 1337)
+  (!srcfileloc  "alias.cc" 1351)
   nil )
  (!pair  "alias_sets"
   (!type already_seen 1101)
