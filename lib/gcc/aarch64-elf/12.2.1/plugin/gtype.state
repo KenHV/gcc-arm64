@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "12.2.1 20220917 (Stable)")
+(!version  "12.2.1 20220924 (Stable)")
 (!srcdir  "../../gcc/gcc")
 (!languages 10 ada c cp d fortran go jit lto objc objcp)
 (!fileslist 226 0
@@ -26352,15 +26352,15 @@
    (!type already_seen 1836)
   )
   gc_pointed_to "vec<registered_function*,va_gc>"
-  (!srcfileloc  "config/aarch64/aarch64-sve-builtins.cc" 550)
+  (!srcfileloc  "config/aarch64/aarch64-sve-builtins.cc" 554)
   (!fields 2 
    (!pair  "va_gc"
     (!type already_seen 79)
-    (!srcfileloc  "config/aarch64/aarch64-sve-builtins.cc" 550)
+    (!srcfileloc  "config/aarch64/aarch64-sve-builtins.cc" 554)
     nil )
    (!pair  "registered_function"
     (!type already_seen 1826)
-    (!srcfileloc  "config/aarch64/aarch64-sve-builtins.cc" 550)
+    (!srcfileloc  "config/aarch64/aarch64-sve-builtins.cc" 554)
     nil )
   )
  )
@@ -31793,7 +31793,7 @@
   nil )
  (!pair  "vec<registered_function*,va_gc>"
   (!type already_seen 1836)
-  (!srcfileloc  "config/aarch64/aarch64-sve-builtins.cc" 550)
+  (!srcfileloc  "config/aarch64/aarch64-sve-builtins.cc" 554)
   nil )
  (!pair  "function_instance"
   (!type already_seen 1824)
@@ -34496,7 +34496,7 @@
   (!srcfileloc  "gengtype.cc" 5243)
   nil )
 )
-(!variables 752
+(!variables 756
  (!pair  "objc_eh_personality_decl"
   (!type already_seen 23)
   (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3838)
@@ -36442,13 +36442,35 @@
   nil )
  (!pair  "registered_functions"
   (!type already_seen 1837)
+  (!srcfileloc  "config/aarch64/aarch64-sve-builtins.cc" 554)
+  nil )
+ (!pair  "acle_svprfop"
+  (!type already_seen 23)
   (!srcfileloc  "config/aarch64/aarch64-sve-builtins.cc" 550)
   nil )
+ (!pair  "acle_svpattern"
+  (!type already_seen 23)
+  (!srcfileloc  "config/aarch64/aarch64-sve-builtins.cc" 546)
+  nil )
+ (!pair  "acle_vector_types"
+  (!type array 2377 nil  gc_used "MAX_TUPLE_SIZE" 
+   (!type array 2378 nil  gc_used "NUM_VECTOR_TYPES + 1" 
+    (!type already_seen 23)
+   )
+  )
+  (!srcfileloc  "config/aarch64/aarch64-sve-builtins.cc" 542)
+  nil )
  (!pair  "abi_vector_types"
-  (!type array 2377 nil  gc_used "NUM_VECTOR_TYPES + 1" 
+  (!type array 2379 nil  gc_used "NUM_VECTOR_TYPES + 1" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "config/aarch64/aarch64-sve-builtins.cc" 538)
+  (!srcfileloc  "config/aarch64/aarch64-sve-builtins.cc" 539)
+  nil )
+ (!pair  "scalar_types"
+  (!type array 2380 nil  gc_used "NUM_VECTOR_TYPES" 
+   (!type already_seen 23)
+  )
+  (!srcfileloc  "config/aarch64/aarch64-sve-builtins.cc" 533)
   nil )
  (!pair  "ls64_arm_data_t"
   (!type already_seen 23)
@@ -36467,21 +36489,21 @@
   (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 728)
   nil )
  (!pair  "aarch64_simd_tuple_types"
-  (!type array 2378 nil  gc_used "ARM_NEON_H_TYPES_LAST" 
-   (!type array 2379 nil  gc_used "3" 
+  (!type array 2381 nil  gc_used "ARM_NEON_H_TYPES_LAST" 
+   (!type array 2382 nil  gc_used "3" 
     (!type already_seen 23)
    )
   )
   (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 726)
   nil )
  (!pair  "aarch64_simd_types"
-  (!type array 2380 nil  gc_used "" 
+  (!type array 2383 nil  gc_used "" 
    (!type already_seen 1815)
   )
   (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 720)
   nil )
  (!pair  "aarch64_builtin_decls"
-  (!type array 2381 nil  gc_used "AARCH64_BUILTIN_MAX" 
+  (!type array 2384 nil  gc_used "AARCH64_BUILTIN_MAX" 
    (!type already_seen 23)
   )
   (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 647)
@@ -36491,7 +36513,7 @@
   (!srcfileloc  "omp-general.h" 137)
   nil )
  (!pair  "internal_fn_fnspec_array"
-  (!type array 2382 nil  gc_used "IFN_LAST + 1" 
+  (!type array 2385 nil  gc_used "IFN_LAST + 1" 
    (!type already_seen 23)
   )
   (!srcfileloc  "internal-fn.h" 128)
@@ -36509,7 +36531,7 @@
   (!srcfileloc  "ubsan.cc" 1203)
   nil )
  (!pair  "ubsan_ids"
-  (!type array 2383 nil  gc_used "2" 
+  (!type array 2386 nil  gc_used "2" 
    (!type already_seen 2)
   )
   (!srcfileloc  "ubsan.cc" 344)
@@ -36542,7 +36564,7 @@
   (!srcfileloc  "asan.cc" 433)
   nil )
  (!pair  "shadow_ptr_types"
-  (!type array 2384 nil  gc_used "3" 
+  (!type array 2387 nil  gc_used "3" 
    (!type already_seen 23)
   )
   (!srcfileloc  "asan.cc" 430)
@@ -36595,7 +36617,7 @@
   (!srcfileloc  "tree-ssa-alias.h" 183)
   nil )
  (!pair  "free_phinodes"
-  (!type array 2385 nil  gc_used "NUM_BUCKETS - 2" 
+  (!type array 2388 nil  gc_used "NUM_BUCKETS - 2" 
    (!type already_seen 1690)
   )
   (!srcfileloc  "tree-phinodes.cc" 70)
@@ -36612,7 +36634,7 @@
   (!srcfileloc  "config/aarch64/aarch64.cc" 26957)
   nil )
  (!pair  "aarch64_sls_shared_thunks"
-  (!type array 2386 nil  gc_used "30" 
+  (!type array 2389 nil  gc_used "30" 
    (!type already_seen 23)
   )
   (!srcfileloc  "config/aarch64/aarch64.cc" 26956)
@@ -36808,13 +36830,13 @@
   (!srcfileloc  "tree.cc" 8675)
   nil )
  (!pair  "nonstandard_boolean_type_cache"
-  (!type array 2387 nil  gc_used "MAX_BOOL_CACHED_PREC + 1" 
+  (!type array 2390 nil  gc_used "MAX_BOOL_CACHED_PREC + 1" 
    (!type already_seen 23)
   )
   (!srcfileloc  "tree.cc" 7056)
   nil )
  (!pair  "nonstandard_integer_type_cache"
-  (!type array 2388 nil  gc_used "2 * MAX_INT_CACHED_PREC + 2" 
+  (!type array 2391 nil  gc_used "2 * MAX_INT_CACHED_PREC + 2" 
    (!type already_seen 23)
   )
   (!srcfileloc  "tree.cc" 7007)
@@ -37036,8 +37058,8 @@
   (!srcfileloc  "explow.cc" 1638)
   nil )
  (!pair  "hard_reg_clobbers"
-  (!type array 2389 nil  gc_used "NUM_MACHINE_MODES" 
-   (!type array 2390 nil  gc_used "FIRST_PSEUDO_REGISTER" 
+  (!type array 2392 nil  gc_used "NUM_MACHINE_MODES" 
+   (!type array 2393 nil  gc_used "FIRST_PSEUDO_REGISTER" 
     (!type already_seen 99)
    )
   )
@@ -37738,25 +37760,25 @@
   (!srcfileloc  "tree-core.h" 2317)
   nil )
  (!pair  "builtin_info"
-  (!type array 2391 nil  gc_used "(int)END_BUILTINS" 
+  (!type array 2394 nil  gc_used "(int)END_BUILTINS" 
    (!type already_seen 975)
   )
   (!srcfileloc  "tree-core.h" 2311)
   nil )
  (!pair  "sizetype_tab"
-  (!type array 2392 nil  gc_used "(int) stk_type_kind_last" 
+  (!type array 2395 nil  gc_used "(int) stk_type_kind_last" 
    (!type already_seen 23)
   )
   (!srcfileloc  "tree-core.h" 2299)
   nil )
  (!pair  "integer_types"
-  (!type array 2393 nil  gc_used "itk_none" 
+  (!type array 2396 nil  gc_used "itk_none" 
    (!type already_seen 23)
   )
   (!srcfileloc  "tree-core.h" 2296)
   nil )
  (!pair  "global_trees"
-  (!type array 2394 nil  gc_used "TI_MAX" 
+  (!type array 2397 nil  gc_used "TI_MAX" 
    (!type already_seen 23)
   )
   (!srcfileloc  "tree-core.h" 2292)
@@ -37770,7 +37792,7 @@
   (!srcfileloc  "tree-core.h" 2275)
   nil )
  (!pair  "int_n_trees"
-  (!type array 2395 nil  gc_used "NUM_INT_N_ENTS" 
+  (!type array 2398 nil  gc_used "NUM_INT_N_ENTS" 
    (!type already_seen 960)
   )
   (!srcfileloc  "tree.h" 6382)
@@ -37800,8 +37822,8 @@
   (!srcfileloc  "rtl.h" 3817)
   nil )
  (!pair  "const_tiny_rtx"
-  (!type array 2396 nil  gc_used "4" 
-   (!type array 2397 nil  gc_used "(int) MAX_MACHINE_MODE" 
+  (!type array 2399 nil  gc_used "4" 
+   (!type array 2400 nil  gc_used "(int) MAX_MACHINE_MODE" 
     (!type already_seen 99)
    )
   )
@@ -37812,7 +37834,7 @@
   (!srcfileloc  "rtl.h" 3802)
   nil )
  (!pair  "const_int_rtx"
-  (!type array 2398 nil  gc_used "MAX_SAVED_CONST_INT * 2 + 1" 
+  (!type array 2401 nil  gc_used "MAX_SAVED_CONST_INT * 2 + 1" 
    (!type already_seen 99)
   )
   (!srcfileloc  "rtl.h" 3796)
@@ -37830,7 +37852,7 @@
   (!srcfileloc  "coverage.cc" 101)
   nil )
  (!pair  "fn_v_ctrs"
-  (!type array 2399 nil  gc_used "GCOV_COUNTERS" 
+  (!type array 2402 nil  gc_used "GCOV_COUNTERS" 
    (!type already_seen 23)
   )
   (!srcfileloc  "coverage.cc" 96)
