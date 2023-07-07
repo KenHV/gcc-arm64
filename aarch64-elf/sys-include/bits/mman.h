@@ -26,11 +26,6 @@
 /* Other flags.  */
 #define MAP_32BIT	0x40		/* Only give out 32-bit addresses.  */
 
-#ifdef __USE_MISC
-/* Set up a restore token in the newly allocatd shadow stack */
-# define SHADOW_STACK_SET_TOKEN 0x1
-#endif
-
 #include <bits/mman-map-flags-generic.h>
 
 /* Include generic Linux declarations.  */

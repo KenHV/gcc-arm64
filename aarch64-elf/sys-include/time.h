@@ -99,8 +99,7 @@ extern time_t __REDIRECT_NTH (mktime, (struct tm *__tp), __mktime64);
    of characters written, or 0 if it would exceed MAXSIZE.  */
 extern size_t strftime (char *__restrict __s, size_t __maxsize,
 			const char *__restrict __format,
-			const struct tm *__restrict __tp)
-			__THROW __nonnull((1, 3, 4));
+			const struct tm *__restrict __tp) __THROW;
 
 #ifdef __USE_XOPEN
 /* Parse S according to FORMAT and store binary time information in TP.
@@ -215,7 +214,7 @@ extern char *__REDIRECT_NTH (ctime_r, (const time_t *__restrict __timer,
 
 
 /* Defined in localtime.c.  */
-extern char *__tzname[2];	/* Current time zone abbreviations.  */
+extern char *__tzname[2];	/* Current timezone names.  */
 extern int __daylight;		/* If daylight-saving time is ever in use.  */
 extern long int __timezone;	/* Seconds west of UTC.  */
 
