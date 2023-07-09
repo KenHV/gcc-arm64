@@ -9,7 +9,7 @@
 BASEVER, DATESTAMP, DEVPHASE, and REVISION are defined by the
 Makefile.  */
 
-#define version_string "13.1.1 20230707 (Stable)"
+#define version_string "13.1.1 20230708 (Stable)"
 #define pkgversion_string "(Eva GCC) "
 
 /* This is the location of the online document giving instructions for
