@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "13.2.1 20230730 (Stable)")
+(!version  "13.2.1 20230805 (Stable)")
 (!srcdir  "../../gcc/gcc")
 (!languages 12 ada c cp d fortran go jit lto m2 objc objcp rust)
 (!fileslist 242 0
@@ -35955,7 +35955,7 @@
   nil )
  (!pair  "gm2_eh_personality_decl"
   (!type already_seen 23)
-  (!srcfileloc  "m2/gm2-lang.cc" 1004)
+  (!srcfileloc  "m2/gm2-lang.cc" 1008)
   nil )
  (!pair  "real_file_decl_data"
   (!type already_seen 323)

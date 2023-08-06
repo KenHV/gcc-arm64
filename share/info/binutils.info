@@ -42,7 +42,7 @@ Introduction
 ************
 
 This brief manual contains documentation for the GNU binary utilities
-(Eva Binutils) version 2.40.90:
+(Eva Binutils) version 2.41.0:
 
    This document is distributed under the terms of the GNU Free
 Documentation License version 1.3.  A copy of the license is included in
@@ -6158,35 +6158,35 @@ Binutils Index
 
 Tag Table:
 Node: Top1839
-Node: ar3580
-Node: ar cmdline7012
-Node: ar scripts20899
-Node: nm26905
-Node: objcopy43231
-Node: objdump85714
-Node: ranlib125523
-Node: size127220
-Node: strings131606
-Node: strip137694
-Node: c++filt148093
-Ref: c++filt-Footnote-1154156
-Node: addr2line154270
-Node: windmc160473
-Node: windres164406
-Node: dlltool171414
-Node: def file format185469
-Node: readelf188219
-Node: elfedit208290
-Node: Common Options211860
-Node: Selecting the Target System212906
-Node: Target Selection213846
-Node: Architecture Selection215971
-Node: debuginfod216847
-Node: Reporting Bugs217881
-Node: Bug Criteria218643
-Node: Bug Reporting219202
-Node: GNU Free Documentation License226159
-Node: Binutils Index251522
+Node: ar3579
+Node: ar cmdline7011
+Node: ar scripts20898
+Node: nm26904
+Node: objcopy43230
+Node: objdump85713
+Node: ranlib125522
+Node: size127219
+Node: strings131605
+Node: strip137693
+Node: c++filt148092
+Ref: c++filt-Footnote-1154155
+Node: addr2line154269
+Node: windmc160472
+Node: windres164405
+Node: dlltool171413
+Node: def file format185468
+Node: readelf188218
+Node: elfedit208289
+Node: Common Options211859
+Node: Selecting the Target System212905
+Node: Target Selection213845
+Node: Architecture Selection215970
+Node: debuginfod216846
+Node: Reporting Bugs217880
+Node: Bug Criteria218642
+Node: Bug Reporting219201
+Node: GNU Free Documentation License226158
+Node: Binutils Index251521
 
 End Tag Table
 

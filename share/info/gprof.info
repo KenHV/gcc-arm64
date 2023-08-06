@@ -27,7 +27,7 @@ to determine which parts of a program are taking most of the execution
 time.  We assume that you know how to write, compile, and execute
 programs.  GNU ‘gprof’ was written by Jay Fenlason.
 
-   This manual is for ‘gprof’ (Eva Binutils) version 2.40.90.
+   This manual is for ‘gprof’ (Eva Binutils) version 2.41.0.
 
    This document is distributed under the terms of the GNU Free
 Documentation License version 1.3.  A copy of the license is included in
@@ -2429,35 +2429,35 @@ their use in free software.
 
 Tag Table:
 Node: Top726
-Node: Introduction2086
-Node: Compiling4607
-Node: Executing8791
-Node: Invoking11786
-Node: Output Options13247
-Node: Analysis Options20807
-Node: Miscellaneous Options24907
-Node: Deprecated Options26277
-Node: Symspecs28460
-Node: Output30375
-Node: Flat Profile31429
-Node: Call Graph36504
-Node: Primary39774
-Node: Callers42424
-Node: Subroutines44644
-Node: Cycles46600
-Node: Line-by-line53628
-Node: Annotated Source57795
-Node: Inaccuracy60885
-Node: Sampling Error61147
-Node: Assumptions64107
-Node: How do I?65660
-Node: Incompatibilities67233
-Node: Details68807
-Node: Implementation69220
-Node: File Format75282
-Node: Internals79622
-Node: Debugging88290
-Node: GNU Free Documentation License89908
+Node: Introduction2085
+Node: Compiling4606
+Node: Executing8790
+Node: Invoking11785
+Node: Output Options13246
+Node: Analysis Options20806
+Node: Miscellaneous Options24906
+Node: Deprecated Options26276
+Node: Symspecs28459
+Node: Output30374
+Node: Flat Profile31428
+Node: Call Graph36503
+Node: Primary39773
+Node: Callers42423
+Node: Subroutines44643
+Node: Cycles46599
+Node: Line-by-line53627
+Node: Annotated Source57794
+Node: Inaccuracy60884
+Node: Sampling Error61146
+Node: Assumptions64106
+Node: How do I?65659
+Node: Incompatibilities67232
+Node: Details68806
+Node: Implementation69219
+Node: File Format75281
+Node: Internals79621
+Node: Debugging88289
+Node: GNU Free Documentation License89907
 
 End Tag Table
 
