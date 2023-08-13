@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "13.2.1 20230805 (Stable)")
+(!version  "13.2.1 20230812 (Stable)")
 (!srcdir  "../../gcc/gcc")
 (!languages 12 ada c cp d fortran go jit lto m2 objc objcp rust)
 (!fileslist 242 0
@@ -28375,7 +28375,7 @@
    (!type already_seen 2027)
   )
   gc_pointed_to "tinst_level"
-  (!srcfileloc  "cp/pt.cc" 9551)
+  (!srcfileloc  "cp/pt.cc" 9549)
   (!fields 8 
    (!pair  "next"
     (!type already_seen 2028)
@@ -30405,7 +30405,7 @@
   nil 0 nil nil )
  
  (!type undefined 2251 nil  gc_unused "class_to_loc_map_t::iterator"
-  (!srcfileloc  "cp/parser.cc" 34631)
+  (!srcfileloc  "cp/parser.cc" 34637)
  )
  
  (!type struct 2252 
@@ -30413,7 +30413,7 @@
    (!type already_seen 2252)
   )
   gc_pointed_to "pending_template"
-  (!srcfileloc  "cp/pt.cc" 9560)
+  (!srcfileloc  "cp/pt.cc" 9558)
   (!fields 2 
    (!pair  "next"
     (!type already_seen 2253)
@@ -30504,15 +30504,15 @@
    (!type already_seen 2268)
   )
   gc_pointed_to "hash_map<tree,tree_pair_p>"
-  (!srcfileloc  "cp/pt.cc" 30459)
+  (!srcfileloc  "cp/pt.cc" 30457)
   (!fields 2 
    (!pair  "tree_pair_p"
     (!type already_seen 541)
-    (!srcfileloc  "cp/pt.cc" 30459)
+    (!srcfileloc  "cp/pt.cc" 30457)
     nil )
    (!pair  "tree"
     (!type already_seen 23)
-    (!srcfileloc  "cp/pt.cc" 30459)
+    (!srcfileloc  "cp/pt.cc" 30457)
     nil )
   )
  )
@@ -31834,15 +31834,15 @@
   nil )
  (!pair  "hash_map<tree,tree_pair_p>"
   (!type already_seen 2268)
-  (!srcfileloc  "cp/pt.cc" 30459)
+  (!srcfileloc  "cp/pt.cc" 30457)
   nil )
  (!pair  "pending_template"
   (!type already_seen 2252)
-  (!srcfileloc  "cp/pt.cc" 9560)
+  (!srcfileloc  "cp/pt.cc" 9558)
   nil )
  (!pair  "tinst_level"
   (!type already_seen 2027)
-  (!srcfileloc  "cp/pt.cc" 9551)
+  (!srcfileloc  "cp/pt.cc" 9549)
   nil )
  (!pair  "ctp_hasher"
   (!type already_seen 2258)
@@ -31870,11 +31870,11 @@
   nil )
  (!pair  "iter_t"
   (!type already_seen 2251)
-  (!srcfileloc  "cp/parser.cc" 34631)
+  (!srcfileloc  "cp/parser.cc" 34637)
   nil )
  (!pair  "class_to_loc_map_t::iterator"
   (!type already_seen 2251)
-  (!srcfileloc  "cp/parser.cc" 34631)
+  (!srcfileloc  "cp/parser.cc" 34637)
   nil )
  (!pair  "cp_parser_expression_stack"
   (!type array 2391 nil  gc_unused "NUM_PREC_VALUES" 
@@ -36779,46 +36779,46 @@
   nil )
  (!pair  "dguide_cache"
   (!type already_seen 2269)
-  (!srcfileloc  "cp/pt.cc" 30459)
+  (!srcfileloc  "cp/pt.cc" 30457)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "explicit_specifier_map"
   (!type already_seen 948)
-  (!srcfileloc  "cp/pt.cc" 14206)
+  (!srcfileloc  "cp/pt.cc" 14204)
   (!options 
    (!option cache string  "")
   )
  )
  (!pair  "defarg_inst"
   (!type already_seen 1564)
-  (!srcfileloc  "cp/pt.cc" 14068)
+  (!srcfileloc  "cp/pt.cc" 14066)
   (!options 
    (!option cache string  "")
   )
  )
  (!pair  "last_error_tinst_level"
   (!type already_seen 2028)
-  (!srcfileloc  "cp/pt.cc" 11101)
+  (!srcfileloc  "cp/pt.cc" 11099)
   nil )
  (!pair  "pending_template_freelist_head"
   (!type already_seen 2253)
-  (!srcfileloc  "cp/pt.cc" 9560)
+  (!srcfileloc  "cp/pt.cc" 9558)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "tinst_level_freelist_head"
   (!type already_seen 2028)
-  (!srcfileloc  "cp/pt.cc" 9551)
+  (!srcfileloc  "cp/pt.cc" 9549)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "tree_list_freelist_head"
   (!type already_seen 23)
-  (!srcfileloc  "cp/pt.cc" 9542)
+  (!srcfileloc  "cp/pt.cc" 9540)
   (!options 
    (!option deletable string  "")
   )
@@ -36868,7 +36868,7 @@
   nil )
  (!pair  "generic_parm_count"
   (!type already_seen 2)
-  (!srcfileloc  "cp/parser.cc" 49587)
+  (!srcfileloc  "cp/parser.cc" 49593)
   nil )
  (!pair  "cp_parser_decl_specs_attrs"
   (!type already_seen 85)
@@ -37277,7 +37277,7 @@
   nil )
  (!pair  "cv_cache"
   (!type already_seen 394)
-  (!srcfileloc  "cp/constexpr.cc" 8561)
+  (!srcfileloc  "cp/constexpr.cc" 8574)
   (!options 
    (!option deletable string  "")
   )
