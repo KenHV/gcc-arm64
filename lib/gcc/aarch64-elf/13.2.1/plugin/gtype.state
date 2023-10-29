@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "13.2.1 20231021 (Stable)")
+(!version  "13.2.1 20231028 (Stable)")
 (!srcdir  "../../gcc/gcc")
 (!languages 12 ada c cp d fortran go jit lto m2 objc objcp rust)
 (!fileslist 242 0
@@ -36707,13 +36707,13 @@
   (!type array 2418 nil  gc_used "(int) BT_LAST + 1" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "d/d-builtins.cc" 1136)
+  (!srcfileloc  "d/d-builtins.cc" 1139)
   nil )
  (!pair  "built_in_attributes"
   (!type array 2419 nil  gc_used "(int) ATTR_LAST" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "d/d-builtins.cc" 1040)
+  (!srcfileloc  "d/d-builtins.cc" 1043)
   nil )
  (!pair  "signed_size_type_node"
   (!type already_seen 23)
@@ -36751,7 +36751,7 @@
   (!type array 2420 nil  gc_used "DTI_MAX" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "d/d-tree.h" 444)
+  (!srcfileloc  "d/d-tree.h" 447)
   nil )
  (!pair  "global_binding_level"
   (!type already_seen 437)
