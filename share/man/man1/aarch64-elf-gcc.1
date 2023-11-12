@@ -55,7 +55,7 @@
 .\" ========================================================================
 .\"
 .IX Title "GCC 1"
-.TH GCC 1 2023-11-04 gcc-13.2.1 GNU
+.TH GCC 1 2023-11-10 gcc-13.2.1 GNU
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -15085,6 +15085,13 @@ crossing a loop backedge when comparing to
 .IX Item "uninit-control-dep-attempts"
 Maximum number of nested calls to search for control dependencies
 during uninitialized variable analysis.
+.IP \fBuninit-max-chain-len\fR 4
+.IX Item "uninit-max-chain-len"
+Maximum number of predicates anded for each predicate ored in the normalized
+predicate chain.
+.IP \fBuninit-max-num-chains\fR 4
+.IX Item "uninit-max-num-chains"
+Maximum number of predicates ored in the normalized predicate chain.
 .IP \fBsched-autopref-queue-depth\fR 4
 .IX Item "sched-autopref-queue-depth"
 Hardware autoprefetcher scheduler model control flag.
