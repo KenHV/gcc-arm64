@@ -69322,8 +69322,12 @@ A.2 Concept and Symbol Index
 * __builtin_ctz:                         Other Builtins.     (line  990)
 * __builtin_ctzl:                        Other Builtins.     (line 1012)
 * __builtin_ctzll:                       Other Builtins.     (line 1035)
+* __builtin_darn:                        Basic PowerPC Built-in Functions Available on ISA 3.0.
+                                                             (line   53)
 * __builtin_darn_32:                     Basic PowerPC Built-in Functions Available on ISA 3.0.
                                                              (line   55)
+* __builtin_darn_raw:                    Basic PowerPC Built-in Functions Available on ISA 3.0.
+                                                             (line   54)
 * __builtin_divf128_round_to_odd:        Basic PowerPC Built-in Functions Available on ISA 3.0.
                                                              (line   30)
 * __builtin_dynamic_object_size:         Object Size Checking.
@@ -69355,6 +69359,14 @@ A.2 Concept and Symbol Index
 * __builtin_huge_vall:                   Other Builtins.     (line  841)
 * __builtin_huge_valq:                   x86 Built-in Functions.
                                                              (line   49)
+* __builtin_ia32_crc32di:                x86 Built-in Functions.
+                                                             (line  863)
+* __builtin_ia32_crc32hi:                x86 Built-in Functions.
+                                                             (line  855)
+* __builtin_ia32_crc32qi:                x86 Built-in Functions.
+                                                             (line  851)
+* __builtin_ia32_crc32si:                x86 Built-in Functions.
+                                                             (line  859)
 * __builtin_ia32_loadhps:                x86 Built-in Functions.
                                                              (line  521)
 * __builtin_ia32_loadlps:                x86 Built-in Functions.
@@ -69375,6 +69387,8 @@ A.2 Concept and Symbol Index
                                                              (line  515)
 * __builtin_ia32_vec_ext_v16qi:          x86 Built-in Functions.
                                                              (line  800)
+* __builtin_ia32_vec_ext_v2di:           x86 Built-in Functions.
+                                                             (line  826)
 * __builtin_ia32_vec_ext_v4sf:           x86 Built-in Functions.
                                                              (line  819)
 * __builtin_ia32_vec_ext_v4si:           x86 Built-in Functions.
@@ -70504,12 +70518,6 @@ A.2 Concept and Symbol Index
 * installation trouble:                  Trouble.            (line    6)
 * instrumentation options:               Instrumentation Options.
                                                              (line    6)
-* int:                                   x86 Built-in Functions.
-                                                             (line  851)
-* int <1>:                               x86 Built-in Functions.
-                                                             (line  855)
-* int <2>:                               x86 Built-in Functions.
-                                                             (line  859)
 * integrating function code:             Inline.             (line    6)
 * interface and implementation headers, C++: C++ Interface.  (line    6)
 * intermediate C version, nonexistent:   G++ and GCC.        (line   34)
@@ -70724,14 +70732,6 @@ A.2 Concept and Symbol Index
 * logbl:                                 Other Builtins.     (line    6)
 * logf:                                  Other Builtins.     (line    6)
 * logl:                                  Other Builtins.     (line    6)
-* long:                                  Basic PowerPC Built-in Functions Available on ISA 3.0.
-                                                             (line   53)
-* long <1>:                              Basic PowerPC Built-in Functions Available on ISA 3.0.
-                                                             (line   54)
-* long <2>:                              x86 Built-in Functions.
-                                                             (line  826)
-* long <3>:                              x86 Built-in Functions.
-                                                             (line  863)
 * long long data types:                  Long Long.          (line    6)
 * longcall function attribute, Blackfin: Blackfin Function Attributes.
                                                              (line   36)
