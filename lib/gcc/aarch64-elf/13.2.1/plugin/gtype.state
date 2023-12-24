@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "13.2.1 20231216 (Stable)")
+(!version  "13.2.1 20231223 (Stable)")
 (!srcdir  "../../gcc/gcc")
 (!languages 12 ada c cp d fortran go jit lto m2 objc objcp rust)
 (!fileslist 242 0
@@ -30528,15 +30528,15 @@
    (!type already_seen 2269)
   )
   gc_pointed_to "hash_map<tree,tree_pair_p>"
-  (!srcfileloc  "cp/pt.cc" 30463)
+  (!srcfileloc  "cp/pt.cc" 30464)
   (!fields 2 
    (!pair  "tree_pair_p"
     (!type already_seen 541)
-    (!srcfileloc  "cp/pt.cc" 30463)
+    (!srcfileloc  "cp/pt.cc" 30464)
     nil )
    (!pair  "tree"
     (!type already_seen 23)
-    (!srcfileloc  "cp/pt.cc" 30463)
+    (!srcfileloc  "cp/pt.cc" 30464)
     nil )
   )
  )
@@ -31858,7 +31858,7 @@
   nil )
  (!pair  "hash_map<tree,tree_pair_p>"
   (!type already_seen 2269)
-  (!srcfileloc  "cp/pt.cc" 30463)
+  (!srcfileloc  "cp/pt.cc" 30464)
   nil )
  (!pair  "pending_template"
   (!type already_seen 2253)
@@ -36807,7 +36807,7 @@
   nil )
  (!pair  "dguide_cache"
   (!type already_seen 2270)
-  (!srcfileloc  "cp/pt.cc" 30463)
+  (!srcfileloc  "cp/pt.cc" 30464)
   (!options 
    (!option deletable string  "")
   )
@@ -37847,11 +37847,11 @@
  )
  (!pair  "hwasan_ctor_statements"
   (!type already_seen 23)
-  (!srcfileloc  "asan.cc" 4648)
+  (!srcfileloc  "asan.cc" 4650)
   nil )
  (!pair  "asan_ctor_statements"
   (!type already_seen 23)
-  (!srcfileloc  "asan.cc" 3596)
+  (!srcfileloc  "asan.cc" 3598)
   nil )
  (!pair  "asan_detect_stack_use_after_return"
   (!type already_seen 23)
