@@ -55,7 +55,7 @@
 .\" ========================================================================
 .\"
 .IX Title "GCC 1"
-.TH GCC 1 2024-01-20 gcc-13.2.1 GNU
+.TH GCC 1 2024-01-27 gcc-13.2.1 GNU
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -19549,7 +19549,7 @@ performance of the code.  Permissible values for this option are:
 \&\fBcortex\-a75.cortex\-a55\fR, \fBcortex\-a76.cortex\-a55\fR,
 \&\fBcortex\-r82\fR, \fBcortex\-x1\fR, \fBcortex\-x1c\fR, \fBcortex\-x2\fR,
 \&\fBcortex\-x3\fR, \fBcortex\-a510\fR, \fBcortex\-a710\fR, \fBcortex\-a715\fR,
-\&\fBampere1\fR, \fBampere1a\fR, and \fBnative\fR.
+\&\fBampere1\fR, \fBampere1a\fR, \fBcobalt\-100\fR and \fBnative\fR.
 .Sp
 The values \fBcortex\-a57.cortex\-a53\fR, \fBcortex\-a72.cortex\-a53\fR,
 \&\fBcortex\-a73.cortex\-a35\fR, \fBcortex\-a73.cortex\-a53\fR,
@@ -21974,7 +21974,7 @@ GCC supports the following AVR devices and ISAs:
 .el .IP \f(CWavrxmega3\fR 4
 .IX Item "avrxmega3"
 "XMEGA" devices with up to 64 KiB of combined program memory and RAM, and with program memory visible in the RAM address space.
-\&\fImcu\fR = \f(CW\*(C`attiny202\*(C'\fR, \f(CW\*(C`attiny204\*(C'\fR, \f(CW\*(C`attiny212\*(C'\fR, \f(CW\*(C`attiny214\*(C'\fR, \f(CW\*(C`attiny402\*(C'\fR, \f(CW\*(C`attiny404\*(C'\fR, \f(CW\*(C`attiny406\*(C'\fR, \f(CW\*(C`attiny412\*(C'\fR, \f(CW\*(C`attiny414\*(C'\fR, \f(CW\*(C`attiny416\*(C'\fR, \f(CW\*(C`attiny417\*(C'\fR, \f(CW\*(C`attiny424\*(C'\fR, \f(CW\*(C`attiny426\*(C'\fR, \f(CW\*(C`attiny427\*(C'\fR, \f(CW\*(C`attiny804\*(C'\fR, \f(CW\*(C`attiny806\*(C'\fR, \f(CW\*(C`attiny807\*(C'\fR, \f(CW\*(C`attiny814\*(C'\fR, \f(CW\*(C`attiny816\*(C'\fR, \f(CW\*(C`attiny817\*(C'\fR, \f(CW\*(C`attiny824\*(C'\fR, \f(CW\*(C`attiny826\*(C'\fR, \f(CW\*(C`attiny827\*(C'\fR, \f(CW\*(C`attiny1604\*(C'\fR, \f(CW\*(C`attiny1606\*(C'\fR, \f(CW\*(C`attiny1607\*(C'\fR, \f(CW\*(C`attiny1614\*(C'\fR, \f(CW\*(C`attiny1616\*(C'\fR, \f(CW\*(C`attiny1617\*(C'\fR, \f(CW\*(C`attiny1624\*(C'\fR, \f(CW\*(C`attiny1626\*(C'\fR, \f(CW\*(C`attiny1627\*(C'\fR, \f(CW\*(C`attiny3214\*(C'\fR, \f(CW\*(C`attiny3216\*(C'\fR, \f(CW\*(C`attiny3217\*(C'\fR, \f(CW\*(C`attiny3224\*(C'\fR, \f(CW\*(C`attiny3226\*(C'\fR, \f(CW\*(C`attiny3227\*(C'\fR, \f(CW\*(C`atmega808\*(C'\fR, \f(CW\*(C`atmega809\*(C'\fR, \f(CW\*(C`atmega1608\*(C'\fR, \f(CW\*(C`atmega1609\*(C'\fR, \f(CW\*(C`atmega3208\*(C'\fR, \f(CW\*(C`atmega3209\*(C'\fR, \f(CW\*(C`atmega4808\*(C'\fR, \f(CW\*(C`atmega4809\*(C'\fR, \f(CW\*(C`avr16dd14\*(C'\fR, \f(CW\*(C`avr16dd20\*(C'\fR, \f(CW\*(C`avr16dd28\*(C'\fR, \f(CW\*(C`avr16dd32\*(C'\fR, \f(CW\*(C`avr32da28\*(C'\fR, \f(CW\*(C`avr32da32\*(C'\fR, \f(CW\*(C`avr32da48\*(C'\fR, \f(CW\*(C`avr32db28\*(C'\fR, \f(CW\*(C`avr32db32\*(C'\fR, \f(CW\*(C`avr32db48\*(C'\fR, \f(CW\*(C`avr32dd14\*(C'\fR, \f(CW\*(C`avr32dd20\*(C'\fR, \f(CW\*(C`avr32dd28\*(C'\fR, \f(CW\*(C`avr32dd32\*(C'\fR.
+\&\fImcu\fR = \f(CW\*(C`attiny202\*(C'\fR, \f(CW\*(C`attiny204\*(C'\fR, \f(CW\*(C`attiny212\*(C'\fR, \f(CW\*(C`attiny214\*(C'\fR, \f(CW\*(C`attiny402\*(C'\fR, \f(CW\*(C`attiny404\*(C'\fR, \f(CW\*(C`attiny406\*(C'\fR, \f(CW\*(C`attiny412\*(C'\fR, \f(CW\*(C`attiny414\*(C'\fR, \f(CW\*(C`attiny416\*(C'\fR, \f(CW\*(C`attiny417\*(C'\fR, \f(CW\*(C`attiny424\*(C'\fR, \f(CW\*(C`attiny426\*(C'\fR, \f(CW\*(C`attiny427\*(C'\fR, \f(CW\*(C`attiny804\*(C'\fR, \f(CW\*(C`attiny806\*(C'\fR, \f(CW\*(C`attiny807\*(C'\fR, \f(CW\*(C`attiny814\*(C'\fR, \f(CW\*(C`attiny816\*(C'\fR, \f(CW\*(C`attiny817\*(C'\fR, \f(CW\*(C`attiny824\*(C'\fR, \f(CW\*(C`attiny826\*(C'\fR, \f(CW\*(C`attiny827\*(C'\fR, \f(CW\*(C`attiny1604\*(C'\fR, \f(CW\*(C`attiny1606\*(C'\fR, \f(CW\*(C`attiny1607\*(C'\fR, \f(CW\*(C`attiny1614\*(C'\fR, \f(CW\*(C`attiny1616\*(C'\fR, \f(CW\*(C`attiny1617\*(C'\fR, \f(CW\*(C`attiny1624\*(C'\fR, \f(CW\*(C`attiny1626\*(C'\fR, \f(CW\*(C`attiny1627\*(C'\fR, \f(CW\*(C`attiny3214\*(C'\fR, \f(CW\*(C`attiny3216\*(C'\fR, \f(CW\*(C`attiny3217\*(C'\fR, \f(CW\*(C`attiny3224\*(C'\fR, \f(CW\*(C`attiny3226\*(C'\fR, \f(CW\*(C`attiny3227\*(C'\fR, \f(CW\*(C`atmega808\*(C'\fR, \f(CW\*(C`atmega809\*(C'\fR, \f(CW\*(C`atmega1608\*(C'\fR, \f(CW\*(C`atmega1609\*(C'\fR, \f(CW\*(C`atmega3208\*(C'\fR, \f(CW\*(C`atmega3209\*(C'\fR, \f(CW\*(C`atmega4808\*(C'\fR, \f(CW\*(C`atmega4809\*(C'\fR, \f(CW\*(C`avr16dd14\*(C'\fR, \f(CW\*(C`avr16dd20\*(C'\fR, \f(CW\*(C`avr16dd28\*(C'\fR, \f(CW\*(C`avr16dd32\*(C'\fR, \f(CW\*(C`avr16ea28\*(C'\fR, \f(CW\*(C`avr16ea32\*(C'\fR, \f(CW\*(C`avr16ea48\*(C'\fR, \f(CW\*(C`avr16eb14\*(C'\fR, \f(CW\*(C`avr16eb20\*(C'\fR, \f(CW\*(C`avr16eb28\*(C'\fR, \f(CW\*(C`avr16eb32\*(C'\fR, \f(CW\*(C`avr32da28\*(C'\fR, \f(CW\*(C`avr32da32\*(C'\fR, \f(CW\*(C`avr32da48\*(C'\fR, \f(CW\*(C`avr32db28\*(C'\fR, \f(CW\*(C`avr32db32\*(C'\fR, \f(CW\*(C`avr32db48\*(C'\fR, \f(CW\*(C`avr32dd14\*(C'\fR, \f(CW\*(C`avr32dd20\*(C'\fR, \f(CW\*(C`avr32dd28\*(C'\fR, \f(CW\*(C`avr32dd32\*(C'\fR, \f(CW\*(C`avr32ea28\*(C'\fR, \f(CW\*(C`avr32ea32\*(C'\fR, \f(CW\*(C`avr32ea48\*(C'\fR.
 .ie n .IP """avrxmega4""" 4
 .el .IP \f(CWavrxmega4\fR 4
 .IX Item "avrxmega4"
