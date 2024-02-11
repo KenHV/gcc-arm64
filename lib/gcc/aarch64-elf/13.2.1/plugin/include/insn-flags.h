@@ -153,12 +153,22 @@
 #define HAVE_loadwb_pairdf_si ((INTVAL (operands[5]) == GET_MODE_SIZE (DFmode)) && (ptr_mode == SImode || Pmode == SImode))
 #define HAVE_loadwb_pairsf_di ((INTVAL (operands[5]) == GET_MODE_SIZE (SFmode)) && (ptr_mode == DImode || Pmode == DImode))
 #define HAVE_loadwb_pairdf_di ((INTVAL (operands[5]) == GET_MODE_SIZE (DFmode)) && (ptr_mode == DImode || Pmode == DImode))
-#define HAVE_loadwb_pairti_si ((TARGET_SIMD && INTVAL (operands[5]) == GET_MODE_SIZE (TImode)) && (ptr_mode == SImode || Pmode == SImode))
-#define HAVE_loadwb_pairtf_si ((TARGET_SIMD && INTVAL (operands[5]) == GET_MODE_SIZE (TFmode)) && (ptr_mode == SImode || Pmode == SImode))
-#define HAVE_loadwb_pairtd_si ((TARGET_SIMD && INTVAL (operands[5]) == GET_MODE_SIZE (TDmode)) && (ptr_mode == SImode || Pmode == SImode))
-#define HAVE_loadwb_pairti_di ((TARGET_SIMD && INTVAL (operands[5]) == GET_MODE_SIZE (TImode)) && (ptr_mode == DImode || Pmode == DImode))
-#define HAVE_loadwb_pairtf_di ((TARGET_SIMD && INTVAL (operands[5]) == GET_MODE_SIZE (TFmode)) && (ptr_mode == DImode || Pmode == DImode))
-#define HAVE_loadwb_pairtd_di ((TARGET_SIMD && INTVAL (operands[5]) == GET_MODE_SIZE (TDmode)) && (ptr_mode == DImode || Pmode == DImode))
+#define HAVE_loadwb_pairti_si ((TARGET_SIMD \
+   && known_eq (INTVAL (operands[5]), GET_MODE_SIZE (TImode))) && (ptr_mode == SImode || Pmode == SImode))
+#define HAVE_loadwb_pairti_di ((TARGET_SIMD \
+   && known_eq (INTVAL (operands[5]), GET_MODE_SIZE (TImode))) && (ptr_mode == DImode || Pmode == DImode))
+#define HAVE_loadwb_pairtf_si ((TARGET_SIMD \
+   && known_eq (INTVAL (operands[5]), GET_MODE_SIZE (TFmode))) && (ptr_mode == SImode || Pmode == SImode))
+#define HAVE_loadwb_pairtf_di ((TARGET_SIMD \
+   && known_eq (INTVAL (operands[5]), GET_MODE_SIZE (TFmode))) && (ptr_mode == DImode || Pmode == DImode))
+#define HAVE_loadwb_pairtd_si ((TARGET_SIMD \
+   && known_eq (INTVAL (operands[5]), GET_MODE_SIZE (TDmode))) && (ptr_mode == SImode || Pmode == SImode))
+#define HAVE_loadwb_pairtd_di ((TARGET_SIMD \
+   && known_eq (INTVAL (operands[5]), GET_MODE_SIZE (TDmode))) && (ptr_mode == DImode || Pmode == DImode))
+#define HAVE_loadwb_pairv16qi_si ((TARGET_SIMD \
+   && known_eq (INTVAL (operands[5]), GET_MODE_SIZE (V16QImode))) && (ptr_mode == SImode || Pmode == SImode))
+#define HAVE_loadwb_pairv16qi_di ((TARGET_SIMD \
+   && known_eq (INTVAL (operands[5]), GET_MODE_SIZE (V16QImode))) && (ptr_mode == DImode || Pmode == DImode))
 #define HAVE_storewb_pairsi_si ((INTVAL (operands[5]) == INTVAL (operands[4]) + GET_MODE_SIZE (SImode)) && (ptr_mode == SImode || Pmode == SImode))
 #define HAVE_storewb_pairsi_di ((INTVAL (operands[5]) == INTVAL (operands[4]) + GET_MODE_SIZE (SImode)) && (ptr_mode == DImode || Pmode == DImode))
 #define HAVE_storewb_pairdi_si ((INTVAL (operands[5]) == INTVAL (operands[4]) + GET_MODE_SIZE (DImode)) && (ptr_mode == SImode || Pmode == SImode))
@@ -168,23 +178,29 @@
 #define HAVE_storewb_pairsf_di ((INTVAL (operands[5]) == INTVAL (operands[4]) + GET_MODE_SIZE (SFmode)) && (ptr_mode == DImode || Pmode == DImode))
 #define HAVE_storewb_pairdf_di ((INTVAL (operands[5]) == INTVAL (operands[4]) + GET_MODE_SIZE (DFmode)) && (ptr_mode == DImode || Pmode == DImode))
 #define HAVE_storewb_pairti_si ((TARGET_SIMD \
-   && INTVAL (operands[5]) \
-      == INTVAL (operands[4]) + GET_MODE_SIZE (TImode)) && (ptr_mode == SImode || Pmode == SImode))
-#define HAVE_storewb_pairtf_si ((TARGET_SIMD \
-   && INTVAL (operands[5]) \
-      == INTVAL (operands[4]) + GET_MODE_SIZE (TFmode)) && (ptr_mode == SImode || Pmode == SImode))
-#define HAVE_storewb_pairtd_si ((TARGET_SIMD \
-   && INTVAL (operands[5]) \
-      == INTVAL (operands[4]) + GET_MODE_SIZE (TDmode)) && (ptr_mode == SImode || Pmode == SImode))
+   && known_eq (INTVAL (operands[5]), \
+		INTVAL (operands[4]) + GET_MODE_SIZE (TImode))) && (ptr_mode == SImode || Pmode == SImode))
 #define HAVE_storewb_pairti_di ((TARGET_SIMD \
-   && INTVAL (operands[5]) \
-      == INTVAL (operands[4]) + GET_MODE_SIZE (TImode)) && (ptr_mode == DImode || Pmode == DImode))
+   && known_eq (INTVAL (operands[5]), \
+		INTVAL (operands[4]) + GET_MODE_SIZE (TImode))) && (ptr_mode == DImode || Pmode == DImode))
+#define HAVE_storewb_pairtf_si ((TARGET_SIMD \
+   && known_eq (INTVAL (operands[5]), \
+		INTVAL (operands[4]) + GET_MODE_SIZE (TFmode))) && (ptr_mode == SImode || Pmode == SImode))
 #define HAVE_storewb_pairtf_di ((TARGET_SIMD \
-   && INTVAL (operands[5]) \
-      == INTVAL (operands[4]) + GET_MODE_SIZE (TFmode)) && (ptr_mode == DImode || Pmode == DImode))
+   && known_eq (INTVAL (operands[5]), \
+		INTVAL (operands[4]) + GET_MODE_SIZE (TFmode))) && (ptr_mode == DImode || Pmode == DImode))
+#define HAVE_storewb_pairtd_si ((TARGET_SIMD \
+   && known_eq (INTVAL (operands[5]), \
+		INTVAL (operands[4]) + GET_MODE_SIZE (TDmode))) && (ptr_mode == SImode || Pmode == SImode))
 #define HAVE_storewb_pairtd_di ((TARGET_SIMD \
-   && INTVAL (operands[5]) \
-      == INTVAL (operands[4]) + GET_MODE_SIZE (TDmode)) && (ptr_mode == DImode || Pmode == DImode))
+   && known_eq (INTVAL (operands[5]), \
+		INTVAL (operands[4]) + GET_MODE_SIZE (TDmode))) && (ptr_mode == DImode || Pmode == DImode))
+#define HAVE_storewb_pairv16qi_si ((TARGET_SIMD \
+   && known_eq (INTVAL (operands[5]), \
+		INTVAL (operands[4]) + GET_MODE_SIZE (V16QImode))) && (ptr_mode == SImode || Pmode == SImode))
+#define HAVE_storewb_pairv16qi_di ((TARGET_SIMD \
+   && known_eq (INTVAL (operands[5]), \
+		INTVAL (operands[4]) + GET_MODE_SIZE (V16QImode))) && (ptr_mode == DImode || Pmode == DImode))
 #define HAVE_addsi3_compare0 1
 #define HAVE_adddi3_compare0 1
 #define HAVE_addsi3_compareC 1
@@ -10293,11 +10309,13 @@ extern rtx        gen_loadwb_pairdf_si                               (rtx, rtx, 
 extern rtx        gen_loadwb_pairsf_di                               (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_loadwb_pairdf_di                               (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_loadwb_pairti_si                               (rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_loadwb_pairtf_si                               (rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_loadwb_pairtd_si                               (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_loadwb_pairti_di                               (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_loadwb_pairtf_si                               (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_loadwb_pairtf_di                               (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_loadwb_pairtd_si                               (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_loadwb_pairtd_di                               (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_loadwb_pairv16qi_si                            (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_loadwb_pairv16qi_di                            (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_storewb_pairsi_si                              (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_storewb_pairsi_di                              (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_storewb_pairdi_si                              (rtx, rtx, rtx, rtx, rtx, rtx);
@@ -10307,11 +10325,13 @@ extern rtx        gen_storewb_pairdf_si                              (rtx, rtx, 
 extern rtx        gen_storewb_pairsf_di                              (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_storewb_pairdf_di                              (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_storewb_pairti_si                              (rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_storewb_pairtf_si                              (rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_storewb_pairtd_si                              (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_storewb_pairti_di                              (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_storewb_pairtf_si                              (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_storewb_pairtf_di                              (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_storewb_pairtd_si                              (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_storewb_pairtd_di                              (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_storewb_pairv16qi_si                           (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_storewb_pairv16qi_di                           (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_addsi3_compare0                                (rtx, rtx, rtx);
 extern rtx        gen_adddi3_compare0                                (rtx, rtx, rtx);
 extern rtx        gen_addsi3_compareC                                (rtx, rtx, rtx);
