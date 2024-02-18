@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "13.2.1 20240210 (Stable)")
+(!version  "13.2.1 20240217 (Stable)")
 (!srcdir  "../../gcc/gcc")
 (!languages 12 ada c cp d fortran go jit lto m2 objc objcp rust)
 (!fileslist 242 0
@@ -28399,7 +28399,7 @@
    (!type already_seen 2028)
   )
   gc_pointed_to "tinst_level"
-  (!srcfileloc  "cp/pt.cc" 9553)
+  (!srcfileloc  "cp/pt.cc" 9558)
   (!fields 8 
    (!pair  "next"
     (!type already_seen 2029)
@@ -30437,7 +30437,7 @@
    (!type already_seen 2253)
   )
   gc_pointed_to "pending_template"
-  (!srcfileloc  "cp/pt.cc" 9562)
+  (!srcfileloc  "cp/pt.cc" 9567)
   (!fields 2 
    (!pair  "next"
     (!type already_seen 2254)
@@ -30528,15 +30528,15 @@
    (!type already_seen 2269)
   )
   gc_pointed_to "hash_map<tree,tree_pair_p>"
-  (!srcfileloc  "cp/pt.cc" 30475)
+  (!srcfileloc  "cp/pt.cc" 30480)
   (!fields 2 
    (!pair  "tree_pair_p"
     (!type already_seen 541)
-    (!srcfileloc  "cp/pt.cc" 30475)
+    (!srcfileloc  "cp/pt.cc" 30480)
     nil )
    (!pair  "tree"
     (!type already_seen 23)
-    (!srcfileloc  "cp/pt.cc" 30475)
+    (!srcfileloc  "cp/pt.cc" 30480)
     nil )
   )
  )
@@ -31858,15 +31858,15 @@
   nil )
  (!pair  "hash_map<tree,tree_pair_p>"
   (!type already_seen 2269)
-  (!srcfileloc  "cp/pt.cc" 30475)
+  (!srcfileloc  "cp/pt.cc" 30480)
   nil )
  (!pair  "pending_template"
   (!type already_seen 2253)
-  (!srcfileloc  "cp/pt.cc" 9562)
+  (!srcfileloc  "cp/pt.cc" 9567)
   nil )
  (!pair  "tinst_level"
   (!type already_seen 2028)
-  (!srcfileloc  "cp/pt.cc" 9553)
+  (!srcfileloc  "cp/pt.cc" 9558)
   nil )
  (!pair  "ctp_hasher"
   (!type already_seen 2259)
@@ -36807,60 +36807,60 @@
   nil )
  (!pair  "dguide_cache"
   (!type already_seen 2270)
-  (!srcfileloc  "cp/pt.cc" 30475)
+  (!srcfileloc  "cp/pt.cc" 30480)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "explicit_specifier_map"
   (!type already_seen 948)
-  (!srcfileloc  "cp/pt.cc" 14206)
+  (!srcfileloc  "cp/pt.cc" 14211)
   (!options 
    (!option cache string  "")
   )
  )
  (!pair  "defarg_inst"
   (!type already_seen 1564)
-  (!srcfileloc  "cp/pt.cc" 14068)
+  (!srcfileloc  "cp/pt.cc" 14073)
   (!options 
    (!option cache string  "")
   )
  )
  (!pair  "last_error_tinst_level"
   (!type already_seen 2029)
-  (!srcfileloc  "cp/pt.cc" 11103)
+  (!srcfileloc  "cp/pt.cc" 11108)
   nil )
  (!pair  "pending_template_freelist_head"
   (!type already_seen 2254)
-  (!srcfileloc  "cp/pt.cc" 9562)
+  (!srcfileloc  "cp/pt.cc" 9567)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "tinst_level_freelist_head"
   (!type already_seen 2029)
-  (!srcfileloc  "cp/pt.cc" 9553)
+  (!srcfileloc  "cp/pt.cc" 9558)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "tree_list_freelist_head"
   (!type already_seen 23)
-  (!srcfileloc  "cp/pt.cc" 9544)
+  (!srcfileloc  "cp/pt.cc" 9549)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "defaulted_ttp_cache"
   (!type already_seen 394)
-  (!srcfileloc  "cp/pt.cc" 7906)
+  (!srcfileloc  "cp/pt.cc" 7911)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "tparm_obj_values"
   (!type already_seen 394)
-  (!srcfileloc  "cp/pt.cc" 7270)
+  (!srcfileloc  "cp/pt.cc" 7275)
   nil )
  (!pair  "ctp_table"
   (!type already_seen 2261)
@@ -37305,7 +37305,7 @@
   nil )
  (!pair  "cv_cache"
   (!type already_seen 394)
-  (!srcfileloc  "cp/constexpr.cc" 8575)
+  (!srcfileloc  "cp/constexpr.cc" 8585)
   (!options 
    (!option deletable string  "")
   )
