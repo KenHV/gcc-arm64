@@ -55,7 +55,7 @@
 .\" ========================================================================
 .\"
 .IX Title "GCC 1"
-.TH GCC 1 2024-02-17 gcc-13.2.1 GNU
+.TH GCC 1 2024-02-24 gcc-13.2.1 GNU
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -794,7 +794,7 @@ in the following sections.
 \&\fB\-mn_flash=\fR\fIsize\fR  \fB\-mno\-interrupts
 \&\-mmain\-is\-OS_task  \-mrelax  \-mrmw  \-mstrict\-X  \-mtiny\-stack
 \&\-mfract\-convert\-truncate
-\&\-mshort\-calls  \-nodevicelib  \-nodevicespecs
+\&\-mshort\-calls  \-mskip\-bug  \-nodevicelib  \-nodevicespecs
 \&\-Waddr\-space\-convert  \-Wmisspelled\-isr\fR
 .Sp
 \&\fIBlackfin Options\fR
@@ -960,7 +960,7 @@ in the following sections.
 \&\-mmax\-inline\-memcpy\-size=\fR\fIn\fR
 \&\fB\-mexplicit\-relocs \-mno\-explicit\-relocs
 \&\-mdirect\-extern\-access \-mno\-direct\-extern\-access
-\&\-mcmodel=\fR\fIcode-model\fR
+\&\-mcmodel=\fR\fIcode-model\fR \fB\-mrelax \-mpass\-mrelax\-to\-as\fR
 .Sp
 \&\fIM32R/D Options\fR
 \&\fB\-m32r2  \-m32rx  \-m32r
@@ -21914,11 +21914,19 @@ address signing.
 These options are defined for AVR implementations:
 .IP \fB\-mmcu=\fR\fImcu\fR 4
 .IX Item "-mmcu=mcu"
-Specify Atmel AVR instruction set architectures (ISA) or MCU type.
+Specify the AVR instruction set architecture (ISA) or device type.
+The default for this option is \f(CW\*(C`avr2\*(C'\fR.
 .Sp
-The default for this option is \fBavr2\fR.
-.Sp
-GCC supports the following AVR devices and ISAs:
+The following AVR devices and ISAs are supported.
+\&\fINote:\fR A complete device support consists of
+startup code \f(CW\*(C`crt\fR\f(CImcu\fR\f(CW.o\*(C'\fR, a device header \f(CW\*(C`avr/io*.h\*(C'\fR,
+a device library \f(CW\*(C`lib\fR\f(CImcu\fR\f(CW.a\*(C'\fR and a
+device-specs (\f(CW\*(C`https://gcc.gnu.org/wiki/avr\-gcc#spec\-files\*(C'\fR) file
+\&\f(CW\*(C`specs\-\fR\f(CImcu\fR\f(CW\*(C'\fR. Only the latter is provided by the compiler
+according the supported \f(CW\*(C`\fR\f(CImcu\fR\f(CW\*(C'\fRs below.  The rest is supported
+by AVR-LibC (\f(CW\*(C`https://www.nongnu.org/avr\-libc/\*(C'\fR), or by means of
+\&\f(CW\*(C`atpack\*(C'\fR (\f(CW\*(C`https://gcc.gnu.org/wiki/avr\-gcc#atpack\*(C'\fR) files
+from the hardware manufacturer.
 .RS 4
 .ie n .IP """avr2""" 4
 .el .IP \f(CWavr2\fR 4
@@ -22071,10 +22079,6 @@ size.
 Do not save registers in \f(CW\*(C`main\*(C'\fR.  The effect is the same like
 attaching attribute \fBAVR Function Attributes,,\fR\f(CB\*(C`OS_task\*(C'\fR
 to \f(CW\*(C`main\*(C'\fR. It is activated per default if optimization is on.
-.IP \fB\-mn\-flash=\fR\fInum\fR 4
-.IX Item "-mn-flash=num"
-Assume that the flash memory has a size of 
-\&\fInum\fR times 64 KiB.
 .IP \fB\-mno\-interrupts\fR 4
 .IX Item "-mno-interrupts"
 Generated code is not compatible with hardware interrupts.
@@ -22094,31 +22098,6 @@ differ from instructions in the assembler code.
 .Sp
 Relaxing must be turned on if linker stubs are needed, see the
 section on \f(CW\*(C`EIND\*(C'\fR and linker stubs below.
-.IP \fB\-mrmw\fR 4
-.IX Item "-mrmw"
-Assume that the device supports the Read-Modify-Write
-instructions \f(CW\*(C`XCH\*(C'\fR, \f(CW\*(C`LAC\*(C'\fR, \f(CW\*(C`LAS\*(C'\fR and \f(CW\*(C`LAT\*(C'\fR.
-.IP \fB\-mshort\-calls\fR 4
-.IX Item "-mshort-calls"
-Assume that \f(CW\*(C`RJMP\*(C'\fR and \f(CW\*(C`RCALL\*(C'\fR can target the whole
-program memory.
-.Sp
-This option is used internally for multilib selection.  It is
-not an optimization option, and you don't need to set it by hand.
-.IP \fB\-msp8\fR 4
-.IX Item "-msp8"
-Treat the stack pointer register as an 8\-bit register,
-i.e. assume the high byte of the stack pointer is zero.
-In general, you don't need to set this option by hand.
-.Sp
-This option is used internally by the compiler to select and
-build multilibs for architectures \f(CW\*(C`avr2\*(C'\fR and \f(CW\*(C`avr25\*(C'\fR.
-These architectures mix devices with and without \f(CW\*(C`SPH\*(C'\fR.
-For any setting other than \fB\-mmcu=avr2\fR or \fB\-mmcu=avr25\fR
-the compiler driver adds or removes this option from the compiler
-proper's command line, because the compiler then knows if the device
-or architecture has an 8\-bit stack pointer and thus no \f(CW\*(C`SPH\*(C'\fR
-register or not.
 .IP \fB\-mstrict\-X\fR 4
 .IX Item "-mstrict-X"
 Use address register \f(CW\*(C`X\*(C'\fR in a way proposed by the hardware.  This means
@@ -22601,6 +22580,42 @@ and is defined to \f(CW2\fR or \f(CW3\fR.
 .PD
 Reflects the \f(CW\*(C`\-\-with\-libf7={libgcc|math|math\-symbols}\*(C'\fR
 configure\ option (\f(CW\*(C`https://gcc.gnu.org/install/configure.html#avr\*(C'\fR).
+.PP
+AVR Internal Options
+.IX Subsection "AVR Internal Options"
+.PP
+The following options are used internally by the compiler and to communicate
+between device specs files and the compiler proper. You don't need to set these
+options by hand, in particular they are not optimization options.
+Using these options in the wrong way may lead to sub-optimal or wrong code.
+They are documented for completeness, and in order to get a better
+understanding of
+device\ specs (\f(CW\*(C`https://gcc.gnu.org/wiki/avr\-gcc#spec\-files\*(C'\fR)
+files.
+.IP \fB\-mn\-flash=\fR\fInum\fR 4
+.IX Item "-mn-flash=num"
+Assume that the flash memory has a size of \fInum\fR times 64 KiB.
+This determines which \f(CW\*(C`_\|_flash\fR\f(CIN\fR\f(CW\*(C'\fR address spaces are available.
+.IP \fB\-mrmw\fR 4
+.IX Item "-mrmw"
+Assume that the device supports the Read-Modify-Write
+instructions \f(CW\*(C`XCH\*(C'\fR, \f(CW\*(C`LAC\*(C'\fR, \f(CW\*(C`LAS\*(C'\fR and \f(CW\*(C`LAT\*(C'\fR.
+.IP \fB\-mshort\-calls\fR 4
+.IX Item "-mshort-calls"
+Assume that \f(CW\*(C`RJMP\*(C'\fR and \f(CW\*(C`RCALL\*(C'\fR can target the whole
+program memory. This option is used for multilib generation and selection
+for the devices from architecture \f(CW\*(C`avrxmega3\*(C'\fR.
+.IP \fB\-mskip\-bug\fR 4
+.IX Item "-mskip-bug"
+Generate code without skips (\f(CW\*(C`CPSE\*(C'\fR, \f(CW\*(C`SBRS\*(C'\fR,
+\&\f(CW\*(C`SBRC\*(C'\fR, \f(CW\*(C`SBIS\*(C'\fR, \f(CW\*(C`SBIC\*(C'\fR) over 32\-bit instructions.
+.IP \fB\-msp8\fR 4
+.IX Item "-msp8"
+Treat the stack pointer register as an 8\-bit register,
+i.e. assume the high byte of the stack pointer is zero.
+This option is used by the compiler to select and
+build multilibs for architectures \f(CW\*(C`avr2\*(C'\fR and \f(CW\*(C`avr25\*(C'\fR.
+These architectures mix devices with and without \f(CW\*(C`SPH\*(C'\fR.
 .PP
 \fIBlackfin Options\fR
 .IX Subsection "Blackfin Options"
@@ -24912,12 +24927,11 @@ The default code model is \f(CW\*(C`normal\*(C'\fR.
 .PD
 Use or do not use assembler relocation operators when dealing with symbolic
 addresses.  The alternative is to use assembler macros instead, which may
-limit optimization.  The default value for the option is determined during
-GCC build-time by detecting corresponding assembler support:
-\&\f(CW\*(C`\-mexplicit\-relocs\*(C'\fR if said support is present,
-\&\f(CW\*(C`\-mno\-explicit\-relocs\*(C'\fR otherwise.  This option is mostly useful for
-debugging, or interoperation with assemblers different from the build-time
-one.
+limit instruction scheduling but allow linker relaxation.  The default
+value for the option is determined with the assembler capability detected
+during GCC build-time and the setting of \f(CW\*(C`\-mrelax\*(C'\fR:
+\&\f(CW\*(C`\-mexplicit\-relocs\*(C'\fR if the assembler supports relocation operators
+but \f(CW\*(C`\-mrelax\*(C'\fR is not enabled, \f(CW\*(C`\-mno\-explicit\-relocs\*(C'\fR otherwise.
 .IP \fB\-mdirect\-extern\-access\fR 4
 .IX Item "-mdirect-extern-access"
 .PD 0
@@ -24934,6 +24948,34 @@ environments where no dynamic link is performed, like firmwares, OS
 kernels, executables linked with \fB\-static\fR or \fB\-static\-pie\fR.
 \&\fB\-mdirect\-extern\-access\fR is not compatible with \fB\-fPIC\fR or
 \&\fB\-fpic\fR.
+.IP \fB\-mrelax\fR 4
+.IX Item "-mrelax"
+.PD 0
+.IP \fB\-mno\-relax\fR 4
+.IX Item "-mno-relax"
+.PD
+Take (do not take) advantage of linker relaxations.  If
+\&\fB\-mpass\-mrelax\-to\-as\fR is enabled, this option is also passed to
+the assembler.  The default is determined during GCC build-time by
+detecting corresponding assembler support:
+\&\fB\-mrelax\fR if the assembler supports both the \fB\-mrelax\fR
+option and the conditional branch relaxation (it's required or the
+\&\f(CW\*(C`.align\*(C'\fR directives and conditional branch instructions in the
+assembly code outputted by GCC may be rejected by the assembler because
+of a relocation overflow), \fB\-mno\-relax\fR otherwise.
+.IP \fB\-mpass\-mrelax\-to\-as\fR 4
+.IX Item "-mpass-mrelax-to-as"
+.PD 0
+.IP \fB\-mno\-pass\-mrelax\-to\-as\fR 4
+.IX Item "-mno-pass-mrelax-to-as"
+.PD
+Pass (do not pass) the \fB\-mrelax\fR or \fB\-mno\-relax\fR option
+to the assembler.  The default is determined during GCC build-time by
+detecting corresponding assembler support:
+\&\fB\-mpass\-mrelax\-to\-as\fR if the assembler supports the
+\&\fB\-mrelax\fR option, \fB\-mno\-pass\-mrelax\-to\-as\fR otherwise.
+This option is mostly useful for debugging, or interoperation with
+assemblers different from the build-time one.
 .PP
 \fIM32C Options\fR
 .IX Subsection "M32C Options"
