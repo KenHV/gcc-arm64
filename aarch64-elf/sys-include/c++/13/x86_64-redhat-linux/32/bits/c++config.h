@@ -34,7 +34,7 @@
 #define _GLIBCXX_RELEASE 13
 
 // The datestamp of the C++ library in compressed ISO date format.
-#define __GLIBCXX__ 20231011
+#define __GLIBCXX__ 20240316
 
 // Macros for various attributes.
 //   _GLIBCXX_PURE
@@ -1810,6 +1810,12 @@ namespace __gnu_cxx
    namespace std::tr1. */
 #define _GLIBCXX_USE_C99_STDINT_TR1 1
 
+/* Define if usable chdir is available in <unistd.h>. */
+#define _GLIBCXX_USE_CHDIR 1
+
+/* Define if usable chmod is available in <sys/stat.h>. */
+#define _GLIBCXX_USE_CHMOD 1
+
 /* Defined if clock_gettime syscall has monotonic and realtime clock support.
    */
 /* #undef _GLIBCXX_USE_CLOCK_GETTIME_SYSCALL */
@@ -1837,6 +1843,9 @@ namespace __gnu_cxx
 /* Define if fseeko and ftello are available. */
 #define _GLIBCXX_USE_FSEEKO_FTELLO 1
 
+/* Define if usable getcwd is available in <unistd.h>. */
+#define _GLIBCXX_USE_GETCWD 1
+
 /* Defined if gettimeofday is available. */
 #define _GLIBCXX_USE_GETTIMEOFDAY 1
 
@@ -1854,6 +1863,9 @@ namespace __gnu_cxx
 
 /* Define if lstat is available in <sys/stat.h>. */
 #define _GLIBCXX_USE_LSTAT 1
+
+/* Define if usable mkdir is available in <sys/stat.h>. */
+#define _GLIBCXX_USE_MKDIR 1
 
 /* Defined if nanosleep is available. */
 #define _GLIBCXX_USE_NANOSLEEP 1

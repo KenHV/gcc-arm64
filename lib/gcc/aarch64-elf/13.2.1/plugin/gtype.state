@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "13.2.1 20240323 (Stable)")
+(!version  "13.2.1 20240330 (Stable)")
 (!srcdir  "../../gcc/gcc")
 (!languages 12 ada c cp d fortran go jit lto m2 objc objcp rust)
 (!fileslist 242 0
@@ -6354,7 +6354,7 @@
                                     nil )
                                    (!pair  "count"
                                     (!type struct 301 nil  gc_used "profile_count"
-                                     (!srcfileloc  "profile-count.h" 1293)
+                                     (!srcfileloc  "profile-count.h" 1297)
                                      (!fields 2 
                                       (!pair  "UINT64_BIT_FIELD_ALIGN"
                                        (!type already_seen 2)
@@ -19752,7 +19752,7 @@
   nil 0 nil nil )
  
  (!type struct 1038 nil  gc_used "sreal"
-  (!srcfileloc  "profile-count.h" 1253)
+  (!srcfileloc  "profile-count.h" 1257)
   (!fields 0 )
   nil 4095 nil nil )
  
@@ -26429,15 +26429,15 @@
   nil 0 nil nil )
  
  (!type struct 1804 nil  gc_pointed_to "tree_type_map"
-  (!srcfileloc  "ubsan.cc" 58)
+  (!srcfileloc  "ubsan.cc" 59)
   (!fields 2 
    (!pair  "type"
     (!type already_seen 984)
-    (!srcfileloc  "ubsan.cc" 56)
+    (!srcfileloc  "ubsan.cc" 57)
     nil )
    (!pair  "decl"
     (!type already_seen 23)
-    (!srcfileloc  "ubsan.cc" 57)
+    (!srcfileloc  "ubsan.cc" 58)
     nil )
   )
   (!options 
@@ -26446,7 +26446,7 @@
   4095 nil nil )
  
  (!type struct 1805 nil  gc_used "tree_type_map_cache_hasher"
-  (!srcfileloc  "ubsan.cc" 82)
+  (!srcfileloc  "ubsan.cc" 83)
   (!fields 0 )
   nil 4095 nil nil )
  
@@ -26455,11 +26455,11 @@
    (!type already_seen 1806)
   )
   gc_pointed_to "hash_table<tree_type_map_cache_hasher>"
-  (!srcfileloc  "ubsan.cc" 82)
+  (!srcfileloc  "ubsan.cc" 83)
   (!fields 1 
    (!pair  "tree_type_map_cache_hasher"
     (!type already_seen 1805)
-    (!srcfileloc  "ubsan.cc" 82)
+    (!srcfileloc  "ubsan.cc" 83)
     nil )
   )
  )
@@ -32750,11 +32750,11 @@
   nil )
  (!pair  "tree_type_map_cache_hasher"
   (!type already_seen 1805)
-  (!srcfileloc  "ubsan.cc" 82)
+  (!srcfileloc  "ubsan.cc" 83)
   nil )
  (!pair  "hash_table<tree_type_map_cache_hasher>"
   (!type already_seen 1806)
-  (!srcfileloc  "ubsan.cc" 82)
+  (!srcfileloc  "ubsan.cc" 83)
   nil )
  (!pair  "vtbl_map_iterator_type"
   (!type already_seen 1794)
@@ -34362,7 +34362,7 @@
   nil )
  (!pair  "sreal"
   (!type already_seen 1038)
-  (!srcfileloc  "profile-count.h" 1253)
+  (!srcfileloc  "profile-count.h" 1257)
   nil )
  (!pair  "profile_probability"
   (!type already_seen 1039)
@@ -37523,7 +37523,7 @@
   nil )
  (!pair  "ext_block"
   (!type already_seen 23)
-  (!srcfileloc  "c/c-decl.cc" 12873)
+  (!srcfileloc  "c/c-decl.cc" 12876)
   nil )
  (!pair  "last_structptr_types"
   (!type array 2433 nil  gc_used "builtin_structptr_type_count" 
@@ -37838,32 +37838,32 @@
   nil )
  (!pair  "ubsan_vptr_type_cache_decl"
   (!type already_seen 23)
-  (!srcfileloc  "ubsan.cc" 1218)
+  (!srcfileloc  "ubsan.cc" 1226)
   nil )
  (!pair  "ubsan_ids"
   (!type array 2452 nil  gc_used "2" 
    (!type already_seen 2)
   )
-  (!srcfileloc  "ubsan.cc" 344)
+  (!srcfileloc  "ubsan.cc" 345)
   nil )
  (!pair  "ubsan_source_location_type"
   (!type already_seen 23)
-  (!srcfileloc  "ubsan.cc" 239)
+  (!srcfileloc  "ubsan.cc" 240)
   nil )
  (!pair  "ubsan_type_descriptor_type"
   (!type already_seen 23)
-  (!srcfileloc  "ubsan.cc" 189)
+  (!srcfileloc  "ubsan.cc" 190)
   nil )
  (!pair  "decl_tree_for_type"
   (!type already_seen 1807)
-  (!srcfileloc  "ubsan.cc" 82)
+  (!srcfileloc  "ubsan.cc" 83)
   (!options 
    (!option cache string  "")
   )
  )
  (!pair  "hwasan_ctor_statements"
   (!type already_seen 23)
-  (!srcfileloc  "asan.cc" 4654)
+  (!srcfileloc  "asan.cc" 4653)
   nil )
  (!pair  "asan_ctor_statements"
   (!type already_seen 23)
