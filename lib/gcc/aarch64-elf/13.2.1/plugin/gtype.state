@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "13.2.1 20240330 (Stable)")
+(!version  "13.2.1 20240405 (Stable)")
 (!srcdir  "../../gcc/gcc")
 (!languages 12 ada c cp d fortran go jit lto m2 objc objcp rust)
 (!fileslist 242 0
@@ -31558,15 +31558,15 @@
  )
  
  (!type struct 2389 nil  gc_used "ivarref_entry"
-  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 2997)
+  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3006)
   (!fields 2 
    (!pair  "decl"
     (!type already_seen 23)
-    (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 2993)
+    (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3002)
     nil )
    (!pair  "offset"
     (!type already_seen 23)
-    (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 2994)
+    (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3003)
     nil )
   )
   nil 1536 nil nil )
@@ -31576,15 +31576,15 @@
    (!type already_seen 2390)
   )
   gc_pointed_to "vec<ivarref_entry,va_gc>"
-  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 2997)
+  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3006)
   (!fields 2 
    (!pair  "va_gc"
     (!type already_seen 80)
-    (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 2997)
+    (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3006)
     nil )
    (!pair  "ivarref_entry"
     (!type already_seen 2389)
-    (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 2997)
+    (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3006)
     nil )
   )
  )
@@ -31592,11 +31592,11 @@
 (!typedefs 953
  (!pair  "ivarref_entry"
   (!type already_seen 2389)
-  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 2997)
+  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3006)
   nil )
  (!pair  "vec<ivarref_entry,va_gc>"
   (!type already_seen 2390)
-  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 2997)
+  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3006)
   nil )
  (!pair  "prot_list_entry"
   (!type already_seen 2386)
@@ -35416,47 +35416,47 @@
   nil )
  (!pair  "objc_eh_personality_decl"
   (!type already_seen 23)
-  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3840)
+  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3854)
   nil )
  (!pair  "next_v2_EHTYPE_id_decl"
   (!type already_seen 23)
-  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3630)
+  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3643)
   nil )
  (!pair  "next_v2_ehvtable_decl"
   (!type already_seen 23)
-  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3629)
+  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3642)
   nil )
  (!pair  "objc_v2_ehtype_template"
   (!type already_seen 23)
-  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3628)
+  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3641)
   nil )
  (!pair  "ehtype_list"
   (!type already_seen 2382)
-  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3287)
+  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3297)
   nil )
  (!pair  "ivar_offset_refs"
   (!type already_seen 2391)
-  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 2997)
+  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 3006)
   nil )
  (!pair  "protlist"
   (!type already_seen 2388)
-  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 2277)
+  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 2280)
   nil )
  (!pair  "nonlazy_category_list"
   (!type already_seen 85)
-  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 2189)
+  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 2191)
   nil )
  (!pair  "category_list"
   (!type already_seen 85)
-  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 2178)
+  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 2180)
   nil )
  (!pair  "nonlazy_class_list"
   (!type already_seen 85)
-  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 2167)
+  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 2169)
   nil )
  (!pair  "class_list"
   (!type already_seen 85)
-  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 2159)
+  (!srcfileloc  "objc/objc-next-runtime-abi-02.cc" 2161)
   nil )
  (!pair  "metaclass_super_refs"
   (!type already_seen 2382)
@@ -35563,15 +35563,15 @@
   nil )
  (!pair  "objc_parmlist"
   (!type already_seen 23)
-  (!srcfileloc  "objc/objc-act.cc" 8434)
+  (!srcfileloc  "objc/objc-act.cc" 8437)
   nil )
  (!pair  "interface_map"
   (!type already_seen 2366)
-  (!srcfileloc  "objc/objc-act.cc" 3940)
+  (!srcfileloc  "objc/objc-act.cc" 3943)
   nil )
  (!pair  "string_layout_checked"
   (!type already_seen 2)
-  (!srcfileloc  "objc/objc-act.cc" 3226)
+  (!srcfileloc  "objc/objc-act.cc" 3229)
   nil )
  (!pair  "string_htab"
   (!type already_seen 2378)
