@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "13.2.1 20240420 (Stable)")
+(!version  "13.2.1 20240427 (Stable)")
 (!srcdir  "../../gcc/gcc")
 (!languages 12 ada c cp d fortran go jit lto m2 objc objcp rust)
 (!fileslist 242 0
@@ -27325,15 +27325,15 @@
    (!type already_seen 1929)
   )
   gc_pointed_to "vec<const_char_p,va_gc>"
-  (!srcfileloc  "c-family/c-common.cc" 5870)
+  (!srcfileloc  "c-family/c-common.cc" 5871)
   (!fields 2 
    (!pair  "va_gc"
     (!type already_seen 80)
-    (!srcfileloc  "c-family/c-common.cc" 5870)
+    (!srcfileloc  "c-family/c-common.cc" 5871)
     nil )
    (!pair  "const_char_p"
     (!type already_seen 11)
-    (!srcfileloc  "c-family/c-common.cc" 5870)
+    (!srcfileloc  "c-family/c-common.cc" 5871)
     nil )
   )
  )
@@ -27343,31 +27343,31 @@
    (!type already_seen 1931)
   )
   gc_pointed_to "vec<tree_gc_vec,va_gc>"
-  (!srcfileloc  "c-family/c-common.cc" 8286)
+  (!srcfileloc  "c-family/c-common.cc" 8287)
   (!fields 2 
    (!pair  "va_gc"
     (!type already_seen 80)
-    (!srcfileloc  "c-family/c-common.cc" 8286)
+    (!srcfileloc  "c-family/c-common.cc" 8287)
     nil )
    (!pair  "tree_gc_vec"
     (!type already_seen 85)
-    (!srcfileloc  "c-family/c-common.cc" 8286)
+    (!srcfileloc  "c-family/c-common.cc" 8287)
     nil )
   )
  )
  
  (!type user_struct 1933 nil  gc_unused "hash_set<char*,false,nofree_string_hash>"
-  (!srcfileloc  "c-family/c-common.cc" 9259)
+  (!srcfileloc  "c-family/c-common.cc" 9260)
   (!fields 2 
    (!pair  "nofree_string_hash"
     (!type undefined 1934 nil  gc_unused "nofree_string_hash"
-     (!srcfileloc  "c-family/c-common.cc" 9259)
+     (!srcfileloc  "c-family/c-common.cc" 9260)
     )
-    (!srcfileloc  "c-family/c-common.cc" 9259)
+    (!srcfileloc  "c-family/c-common.cc" 9260)
     nil )
    (!pair  "false"
     (!type already_seen 880)
-    (!srcfileloc  "c-family/c-common.cc" 9259)
+    (!srcfileloc  "c-family/c-common.cc" 9260)
     nil )
   )
  )
@@ -27375,7 +27375,7 @@
  (!type already_seen 1934)
  
  (!type user_struct 1935 nil  gc_unused "hash_map<char*,per_file_includes_t*>"
-  (!srcfileloc  "c-family/c-common.cc" 9264)
+  (!srcfileloc  "c-family/c-common.cc" 9265)
   (!fields 1 
    (!pair  "per_file_includes_t"
     (!type pointer 1936 nil  gc_unused
@@ -27385,7 +27385,7 @@
       (!fields 0 )
       nil 0 nil nil )
     )
-    (!srcfileloc  "c-family/c-common.cc" 9264)
+    (!srcfileloc  "c-family/c-common.cc" 9265)
     nil )
   )
  )
@@ -29593,19 +29593,19 @@
   nil 0 nil nil )
  
  (!type struct 2138 nil  gc_pointed_to "source_location_table_entry"
-  (!srcfileloc  "cp/cp-gimplify.cc" 3394)
+  (!srcfileloc  "cp/cp-gimplify.cc" 3398)
   (!fields 3 
    (!pair  "loc"
     (!type already_seen 2)
-    (!srcfileloc  "cp/cp-gimplify.cc" 3391)
+    (!srcfileloc  "cp/cp-gimplify.cc" 3395)
     nil )
    (!pair  "uid"
     (!type already_seen 2)
-    (!srcfileloc  "cp/cp-gimplify.cc" 3392)
+    (!srcfileloc  "cp/cp-gimplify.cc" 3396)
     nil )
    (!pair  "var"
     (!type already_seen 23)
-    (!srcfileloc  "cp/cp-gimplify.cc" 3393)
+    (!srcfileloc  "cp/cp-gimplify.cc" 3397)
     nil )
   )
   (!options 
@@ -29614,7 +29614,7 @@
   1028 nil nil )
  
  (!type struct 2139 nil  gc_used "source_location_table_entry_hash"
-  (!srcfileloc  "cp/cp-gimplify.cc" 3470)
+  (!srcfileloc  "cp/cp-gimplify.cc" 3474)
   (!fields 0 )
   nil 1028 nil nil )
  
@@ -29623,11 +29623,11 @@
    (!type already_seen 2140)
   )
   gc_pointed_to "hash_table<source_location_table_entry_hash>"
-  (!srcfileloc  "cp/cp-gimplify.cc" 3470)
+  (!srcfileloc  "cp/cp-gimplify.cc" 3474)
   (!fields 1 
    (!pair  "source_location_table_entry_hash"
     (!type already_seen 2139)
-    (!srcfileloc  "cp/cp-gimplify.cc" 3470)
+    (!srcfileloc  "cp/cp-gimplify.cc" 3474)
     nil )
   )
  )
@@ -32196,11 +32196,11 @@
   nil )
  (!pair  "source_location_table_entry_hash"
   (!type already_seen 2139)
-  (!srcfileloc  "cp/cp-gimplify.cc" 3470)
+  (!srcfileloc  "cp/cp-gimplify.cc" 3474)
   nil )
  (!pair  "hash_table<source_location_table_entry_hash>"
   (!type already_seen 2140)
-  (!srcfileloc  "cp/cp-gimplify.cc" 3470)
+  (!srcfileloc  "cp/cp-gimplify.cc" 3474)
   nil )
  (!pair  "coroutine_info_hasher"
   (!type already_seen 2119)
@@ -32536,39 +32536,39 @@
   nil )
  (!pair  "added_includes_t"
   (!type already_seen 1935)
-  (!srcfileloc  "c-family/c-common.cc" 9264)
+  (!srcfileloc  "c-family/c-common.cc" 9265)
   nil )
  (!pair  "hash_map<char*,per_file_includes_t*>"
   (!type already_seen 1935)
-  (!srcfileloc  "c-family/c-common.cc" 9264)
+  (!srcfileloc  "c-family/c-common.cc" 9265)
   nil )
  (!pair  "per_file_includes_t"
   (!type already_seen 1933)
-  (!srcfileloc  "c-family/c-common.cc" 9259)
+  (!srcfileloc  "c-family/c-common.cc" 9260)
   nil )
  (!pair  "nofree_string_hash"
   (!type already_seen 1934)
-  (!srcfileloc  "c-family/c-common.cc" 9259)
+  (!srcfileloc  "c-family/c-common.cc" 9260)
   nil )
  (!pair  "hash_set<char*,false,nofree_string_hash>"
   (!type already_seen 1933)
-  (!srcfileloc  "c-family/c-common.cc" 9259)
+  (!srcfileloc  "c-family/c-common.cc" 9260)
   nil )
  (!pair  "vec<tree_gc_vec,va_gc>"
   (!type already_seen 1931)
-  (!srcfileloc  "c-family/c-common.cc" 8286)
+  (!srcfileloc  "c-family/c-common.cc" 8287)
   nil )
  (!pair  "tree_gc_vec"
   (!type already_seen 85)
-  (!srcfileloc  "c-family/c-common.cc" 8285)
+  (!srcfileloc  "c-family/c-common.cc" 8286)
   nil )
  (!pair  "vec<const_char_p,va_gc>"
   (!type already_seen 1929)
-  (!srcfileloc  "c-family/c-common.cc" 5870)
+  (!srcfileloc  "c-family/c-common.cc" 5871)
   nil )
  (!pair  "const_char_p"
   (!type already_seen 9)
-  (!srcfileloc  "c-family/c-common.cc" 5869)
+  (!srcfileloc  "c-family/c-common.cc" 5870)
   nil )
  (!pair  "c_binding_ptr"
   (!type already_seen 646)
@@ -37121,17 +37121,17 @@
   nil )
  (!pair  "source_location_id"
   (!type already_seen 2)
-  (!srcfileloc  "cp/cp-gimplify.cc" 3472)
+  (!srcfileloc  "cp/cp-gimplify.cc" 3476)
   nil )
  (!pair  "source_location_table"
   (!type already_seen 2141)
-  (!srcfileloc  "cp/cp-gimplify.cc" 3471)
+  (!srcfileloc  "cp/cp-gimplify.cc" 3475)
   nil )
  (!pair  "fold_caches"
   (!type array 2424 nil  gc_used "2" 
    (!type already_seen 394)
   )
-  (!srcfileloc  "cp/cp-gimplify.cc" 2514)
+  (!srcfileloc  "cp/cp-gimplify.cc" 2518)
   (!options 
    (!option deletable string  "")
   )
@@ -37506,14 +37506,14 @@
  )
  (!pair  "tree_vector_cache"
   (!type already_seen 1932)
-  (!srcfileloc  "c-family/c-common.cc" 8286)
+  (!srcfileloc  "c-family/c-common.cc" 8287)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "optimize_args"
   (!type already_seen 1930)
-  (!srcfileloc  "c-family/c-common.cc" 5870)
+  (!srcfileloc  "c-family/c-common.cc" 5871)
   nil )
  (!pair  "compound_literal_number"
   (!type already_seen 2)
@@ -37867,11 +37867,11 @@
  )
  (!pair  "hwasan_ctor_statements"
   (!type already_seen 23)
-  (!srcfileloc  "asan.cc" 4653)
+  (!srcfileloc  "asan.cc" 4676)
   nil )
  (!pair  "asan_ctor_statements"
   (!type already_seen 23)
-  (!srcfileloc  "asan.cc" 3602)
+  (!srcfileloc  "asan.cc" 3625)
   nil )
  (!pair  "asan_detect_stack_use_after_return"
   (!type already_seen 23)
@@ -38143,23 +38143,23 @@
   nil )
  (!pair  "gcc_eh_personality_decl"
   (!type already_seen 23)
-  (!srcfileloc  "tree.cc" 12099)
+  (!srcfileloc  "tree.cc" 12100)
   nil )
  (!pair  "anon_cnt"
   (!type already_seen 2)
-  (!srcfileloc  "tree.cc" 8737)
+  (!srcfileloc  "tree.cc" 8738)
   nil )
  (!pair  "nonstandard_boolean_type_cache"
   (!type array 2457 nil  gc_used "MAX_BOOL_CACHED_PREC + 1" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "tree.cc" 7101)
+  (!srcfileloc  "tree.cc" 7102)
   nil )
  (!pair  "nonstandard_integer_type_cache"
   (!type array 2458 nil  gc_used "2 * MAX_INT_CACHED_PREC + 2" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "tree.cc" 7052)
+  (!srcfileloc  "tree.cc" 7053)
   nil )
  (!pair  "debug_args_for_decl"
   (!type already_seen 1564)
