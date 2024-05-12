@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "13.2.1 20240504 (Stable)")
+(!version  "13.2.1 20240509 (Stable)")
 (!srcdir  "../../gcc/gcc")
 (!languages 12 ada c cp d fortran go jit lto m2 objc objcp rust)
 (!fileslist 242 0
@@ -24739,7 +24739,7 @@
   nil 0 nil nil )
  
  (!type struct 1520 nil  gc_used "libfunc_decl_hasher"
-  (!srcfileloc  "optabs-libfuncs.cc" 720)
+  (!srcfileloc  "optabs-libfuncs.cc" 722)
   (!fields 0 )
   nil 4095 nil nil )
  
@@ -24748,11 +24748,11 @@
    (!type already_seen 1521)
   )
   gc_pointed_to "hash_table<libfunc_decl_hasher>"
-  (!srcfileloc  "optabs-libfuncs.cc" 720)
+  (!srcfileloc  "optabs-libfuncs.cc" 722)
   (!fields 1 
    (!pair  "libfunc_decl_hasher"
     (!type already_seen 1520)
-    (!srcfileloc  "optabs-libfuncs.cc" 720)
+    (!srcfileloc  "optabs-libfuncs.cc" 722)
     nil )
   )
  )
@@ -25453,15 +25453,15 @@
   nil 0 nil nil )
  
  (!type struct 1640 nil  gc_unused "numbered_tree"
-  (!srcfileloc  "tree-dfa.cc" 960)
+  (!srcfileloc  "tree-dfa.cc" 962)
   (!fields 2 
    (!pair  "t"
     (!type already_seen 23)
-    (!srcfileloc  "tree-dfa.cc" 958)
+    (!srcfileloc  "tree-dfa.cc" 960)
     nil )
    (!pair  "num"
     (!type already_seen 2)
-    (!srcfileloc  "tree-dfa.cc" 959)
+    (!srcfileloc  "tree-dfa.cc" 961)
     nil )
   )
   nil 4095 nil nil )
@@ -27357,17 +27357,17 @@
  )
  
  (!type user_struct 1933 nil  gc_unused "hash_set<char*,false,nofree_string_hash>"
-  (!srcfileloc  "c-family/c-common.cc" 9260)
+  (!srcfileloc  "c-family/c-common.cc" 9265)
   (!fields 2 
    (!pair  "nofree_string_hash"
     (!type undefined 1934 nil  gc_unused "nofree_string_hash"
-     (!srcfileloc  "c-family/c-common.cc" 9260)
+     (!srcfileloc  "c-family/c-common.cc" 9265)
     )
-    (!srcfileloc  "c-family/c-common.cc" 9260)
+    (!srcfileloc  "c-family/c-common.cc" 9265)
     nil )
    (!pair  "false"
     (!type already_seen 880)
-    (!srcfileloc  "c-family/c-common.cc" 9260)
+    (!srcfileloc  "c-family/c-common.cc" 9265)
     nil )
   )
  )
@@ -27375,7 +27375,7 @@
  (!type already_seen 1934)
  
  (!type user_struct 1935 nil  gc_unused "hash_map<char*,per_file_includes_t*>"
-  (!srcfileloc  "c-family/c-common.cc" 9265)
+  (!srcfileloc  "c-family/c-common.cc" 9270)
   (!fields 1 
    (!pair  "per_file_includes_t"
     (!type pointer 1936 nil  gc_unused
@@ -27385,7 +27385,7 @@
       (!fields 0 )
       nil 0 nil nil )
     )
-    (!srcfileloc  "c-family/c-common.cc" 9265)
+    (!srcfileloc  "c-family/c-common.cc" 9270)
     nil )
   )
  )
@@ -32536,23 +32536,23 @@
   nil )
  (!pair  "added_includes_t"
   (!type already_seen 1935)
-  (!srcfileloc  "c-family/c-common.cc" 9265)
+  (!srcfileloc  "c-family/c-common.cc" 9270)
   nil )
  (!pair  "hash_map<char*,per_file_includes_t*>"
   (!type already_seen 1935)
-  (!srcfileloc  "c-family/c-common.cc" 9265)
+  (!srcfileloc  "c-family/c-common.cc" 9270)
   nil )
  (!pair  "per_file_includes_t"
   (!type already_seen 1933)
-  (!srcfileloc  "c-family/c-common.cc" 9260)
+  (!srcfileloc  "c-family/c-common.cc" 9265)
   nil )
  (!pair  "nofree_string_hash"
   (!type already_seen 1934)
-  (!srcfileloc  "c-family/c-common.cc" 9260)
+  (!srcfileloc  "c-family/c-common.cc" 9265)
   nil )
  (!pair  "hash_set<char*,false,nofree_string_hash>"
   (!type already_seen 1933)
-  (!srcfileloc  "c-family/c-common.cc" 9260)
+  (!srcfileloc  "c-family/c-common.cc" 9265)
   nil )
  (!pair  "vec<tree_gc_vec,va_gc>"
   (!type already_seen 1931)
@@ -33290,11 +33290,11 @@
   nil )
  (!pair  "libfunc_decl_hasher"
   (!type already_seen 1520)
-  (!srcfileloc  "optabs-libfuncs.cc" 720)
+  (!srcfileloc  "optabs-libfuncs.cc" 722)
   nil )
  (!pair  "hash_table<libfunc_decl_hasher>"
   (!type already_seen 1521)
-  (!srcfileloc  "optabs-libfuncs.cc" 720)
+  (!srcfileloc  "optabs-libfuncs.cc" 722)
   nil )
  (!pair  "vec_modify_pair_heap"
   (!type already_seen 1509)
@@ -37319,7 +37319,7 @@
   nil )
  (!pair  "cv_cache"
   (!type already_seen 394)
-  (!srcfileloc  "cp/constexpr.cc" 8585)
+  (!srcfileloc  "cp/constexpr.cc" 8610)
   (!options 
    (!option deletable string  "")
   )
@@ -38143,7 +38143,7 @@
   nil )
  (!pair  "gcc_eh_personality_decl"
   (!type already_seen 23)
-  (!srcfileloc  "tree.cc" 12100)
+  (!srcfileloc  "tree.cc" 12102)
   nil )
  (!pair  "anon_cnt"
   (!type already_seen 2)
@@ -38252,7 +38252,7 @@
   nil )
  (!pair  "libfunc_decls"
   (!type already_seen 1522)
-  (!srcfileloc  "optabs-libfuncs.cc" 720)
+  (!srcfileloc  "optabs-libfuncs.cc" 722)
   nil )
  (!pair  "unused_expr_list"
   (!type already_seen 100)
