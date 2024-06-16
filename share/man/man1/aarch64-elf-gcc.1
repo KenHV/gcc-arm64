@@ -55,7 +55,7 @@
 .\" ========================================================================
 .\"
 .IX Title "GCC 1"
-.TH GCC 1 2024-06-08 gcc-13.3.1 GNU
+.TH GCC 1 2024-06-15 gcc-13.3.1 GNU
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -31706,8 +31706,10 @@ instruction set support.
 .IP \fBlujiazui\fR 4
 .IX Item "lujiazui"
 ZHAOXIN lujiazui CPU with x86\-64, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1,
-SSE4.2, AVX, POPCNT, AES, PCLMUL, RDRND, XSAVE, XSAVEOPT, FSGSBASE, CX16,
-ABM, BMI, BMI2, F16C, FXSR, RDSEED instruction set support.
+SSE4.2, POPCNT, AES, PCLMUL, RDRND, XSAVE, XSAVEOPT, FSGSBASE, CX16,
+ABM, BMI, BMI2, FXSR, RDSEED instruction set support.  While the CPUs
+do support AVX and F16C, these aren't enabled by \f(CW\*(C`\-march=lujiazui\*(C'\fR
+for performance reasons.
 .IP \fBgeode\fR 4
 .IX Item "geode"
 AMD Geode embedded processor with MMX and 3DNow! instruction set support.
