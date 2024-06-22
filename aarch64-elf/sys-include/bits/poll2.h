@@ -1,5 +1,5 @@
 /* Checking macros for poll functions.
-   Copyright (C) 2012-2023 Free Software Foundation, Inc.
+   Copyright (C) 2012-2024 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -43,7 +43,7 @@ poll (struct pollfd *__fds, nfds_t __nfds, int __timeout)
 
 
 #ifdef __USE_GNU
-# ifdef __USE_TIME_BITS64
+# ifdef __USE_TIME64_REDIRECTS
 extern int __REDIRECT (__ppoll64_alias, (struct pollfd *__fds, nfds_t __nfds,
 				       const struct timespec *__timeout,
 				       const __sigset_t *__ss), __ppoll64);

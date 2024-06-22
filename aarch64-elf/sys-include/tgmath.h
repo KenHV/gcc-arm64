@@ -1,4 +1,4 @@
-/* Copyright (C) 1997-2023 Free Software Foundation, Inc.
+/* Copyright (C) 1997-2024 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -961,7 +961,7 @@
 #define nexttoward(Val1, Val2) \
      __TGMATH_BINARY_FIRST_REAL_STD_ONLY (Val1, Val2, nexttoward)
 
-/* Return the remainder of integer divison X / Y with infinite precision.  */
+/* Return the remainder of integer division X / Y with infinite precision.  */
 #define remainder(Val1, Val2) __TGMATH_BINARY_REAL_ONLY (Val1, Val2, remainder)
 
 /* Return X times (2 to the Nth power).  */

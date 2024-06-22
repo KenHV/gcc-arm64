@@ -1,13 +1,13 @@
-This is sframe-spec.info, produced by makeinfo version 7.0.2 from
+This is sframe-spec.info, produced by makeinfo version 7.1 from
 sframe-spec.texi.
 
-Copyright © 2021-2023 Free Software Foundation, Inc.
+Copyright © 2021-2024 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU General Public License, Version 3 or any
 later version published by the Free Software Foundation.  A copy of the
-license is included in the section entitled “GNU General Public
-License”.
+license is included in the section entitled "GNU General Public
+License".
 
 INFO-DIR-SECTION Software development
 START-INFO-DIR-ENTRY
@@ -344,7 +344,7 @@ File: sframe-spec.info,  Node: SFrame Function Descriptor Entries,  Next: SFrame
 The SFrame Function Descriptor Entry sub-section is a sorted array of
 fixed-length SFrame function descriptor entries (SFrame FDEs).  Each
 SFrame FDE is a packed structure which contains information to describe
-a function’s stack trace information at a high-level.
+a function's stack trace information at a high-level.
 
      typedef struct sframe_func_desc_entry
      {
@@ -381,7 +381,7 @@ Offset   Name                                 Description
                                               the size of the function in bytes.
                                               
 0x08     ‘uint32_t sfde_func_start_fre_off’   Unsigned 32-bit integral field specifying
-                                              the offset in bytes of the function’s
+                                              the offset in bytes of the function's
                                               first SFrame FRE in the SFrame section.
                                               
 0x0c     ‘uint32_t sfde_func_num_fres’        Unsigned 32-bit integral field specifying
@@ -419,7 +419,7 @@ The info word is a bitfield split into three parts.  From MSB to LSB:
 
 Bit offset   Name          Description
 ----------------------------------------------------------------------------------------
-7–6          ‘unused’      Unused bits.
+7-6          ‘unused’      Unused bits.
                            
 5            ‘pauth_key’   Specify which key is used for signing the return addresses
                            in the SFrame FDE. Two possible values:
@@ -431,7 +431,7 @@ Bit offset   Name          Description
                            SFRAME_FDE_TYPE_PCINC (0).
                            *Note The SFrame FDE types::.
                            
-0–3          ‘fretype’     Choice of three SFrame FRE types.
+0-3          ‘fretype’     Choice of three SFrame FRE types.
                            *Note The SFrame FRE types::.
 
 
@@ -669,24 +669,24 @@ Index
 
 
 Tag Table:
-Node: Top569
-Node: Introduction1159
-Node: Overview1345
-Node: Changes from Version 1 to Version 22932
-Node: SFrame section3709
-Node: SFrame Preamble4185
-Node: SFrame endianness5624
-Node: SFrame version6088
-Node: SFrame flags6664
-Node: SFrame Header7396
-Node: SFrame ABI/arch identifier12592
-Node: SFrame Function Descriptor Entries13627
-Node: The SFrame FDE info word17329
-Node: The SFrame FDE types18504
-Node: The SFrame FRE types20233
-Node: SFrame Frame Row Entries21777
-Node: The SFrame FRE info word24470
-Node: Index26480
+Node: Top563
+Node: Introduction1153
+Node: Overview1339
+Node: Changes from Version 1 to Version 22926
+Node: SFrame section3703
+Node: SFrame Preamble4179
+Node: SFrame endianness5618
+Node: SFrame version6082
+Node: SFrame flags6658
+Node: SFrame Header7390
+Node: SFrame ABI/arch identifier12586
+Node: SFrame Function Descriptor Entries13621
+Node: The SFrame FDE info word17319
+Node: The SFrame FDE types18490
+Node: The SFrame FRE types20219
+Node: SFrame Frame Row Entries21763
+Node: The SFrame FRE info word24456
+Node: Index26466
 
 End Tag Table
 
