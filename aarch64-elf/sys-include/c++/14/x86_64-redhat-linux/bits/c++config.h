@@ -40,7 +40,7 @@
 #define _GLIBCXX_RELEASE 14
 
 // The datestamp of the C++ library in compressed ISO date format.
-#define __GLIBCXX__ 20240620
+#define __GLIBCXX__ 20240701
 
 // Macros for various attributes.
 //   _GLIBCXX_PURE
@@ -1877,7 +1877,7 @@ namespace __gnu_cxx
 #define _GLIBCXX_RELEASE 14
 
 // The datestamp of the C++ library in compressed ISO date format.
-#define __GLIBCXX__ 20240620
+#define __GLIBCXX__ 20240701
 
 // Macros for various attributes.
 //   _GLIBCXX_PURE
