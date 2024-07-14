@@ -55,7 +55,7 @@
 .\" ========================================================================
 .\"
 .IX Title "GCC 1"
-.TH GCC 1 2024-07-06 gcc-14.1.1 GNU
+.TH GCC 1 2024-07-13 gcc-14.1.1 GNU
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -35182,13 +35182,14 @@ enabled by default on those targets.
 .IP \fB\-mcrtdll=\fR\fIlibrary\fR 4
 .IX Item "-mcrtdll=library"
 Preprocess, compile or link with specified C RunTime DLL \fIlibrary\fR.
-This option adjust predefined macros \f(CW\*(C`_\|_CRTDLL_\|_\*(C'\fR, \f(CW\*(C`_\|_MSVCRT_\|_\*(C'\fR
-and \f(CW\*(C`_\|_MSVCRT_VERSION_\|_\*(C'\fR for specified CRT \fIlibrary\fR, choose
-start file for CRT \fIlibrary\fR and link with CRT \fIlibrary\fR.
+This option adjust predefined macros \f(CW\*(C`_\|_CRTDLL_\|_\*(C'\fR, \f(CW\*(C`_\|_MSVCRT_\|_\*(C'\fR,
+\&\f(CW\*(C`_UCRT\*(C'\fR and \f(CW\*(C`_\|_MSVCRT_VERSION_\|_\*(C'\fR for specified CRT \fIlibrary\fR,
+choose start file for CRT \fIlibrary\fR and link with CRT \fIlibrary\fR.
 Recognized CRT library names for proprocessor are:
-\&\f(CW\*(C`crtdll\*(C'\fR, \f(CW\*(C`msvcrt10\*(C'\fR, \f(CW\*(C`msvcrt20\*(C'\fR, \f(CW\*(C`msvcrt40\*(C'\fR,
-\&\f(CW\*(C`msvcrt\-os\*(C'\fR, \f(CW\*(C`msvcr70\*(C'\fR, \f(CW\*(C`msvcr80\*(C'\fR, \f(CW\*(C`msvcr90\*(C'\fR,
-\&\f(CW\*(C`msvcr100\*(C'\fR, \f(CW\*(C`msvcr110\*(C'\fR, \f(CW\*(C`msvcr120\*(C'\fR and \f(CW\*(C`ucrt\*(C'\fR.
+\&\f(CW\*(C`crtdll*\*(C'\fR, \f(CW\*(C`msvcrt10*\*(C'\fR, \f(CW\*(C`msvcrt20*\*(C'\fR, \f(CW\*(C`msvcrt40*\*(C'\fR,
+\&\f(CW\*(C`msvcr40*\*(C'\fR, \f(CW\*(C`msvcrtd*\*(C'\fR, \f(CW\*(C`msvcrt\-os*\*(C'\fR,
+\&\f(CW\*(C`msvcr70*\*(C'\fR, \f(CW\*(C`msvcr71*\*(C'\fR, \f(CW\*(C`msvcr80*\*(C'\fR, \f(CW\*(C`msvcr90*\*(C'\fR,
+\&\f(CW\*(C`msvcr100*\*(C'\fR, \f(CW\*(C`msvcr110*\*(C'\fR, \f(CW\*(C`msvcr120*\*(C'\fR and \f(CW\*(C`ucrt*\*(C'\fR.
 If this options is not specified then the default MinGW import library
 \&\f(CW\*(C`msvcrt\*(C'\fR is used for linking and no other adjustment for
 preprocessor is done. MinGW import library \f(CW\*(C`msvcrt\*(C'\fR is just a
