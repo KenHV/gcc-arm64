@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "14.2.1 20240831 (Stable)")
+(!version  "14.2.1 20240907 (Stable)")
 (!srcdir  "../../gcc/gcc")
 (!languages 12 ada c cp d fortran go jit lto m2 objc objcp rust)
 (!fileslist 249 0
@@ -28271,21 +28271,21 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1931 nil  gc_used "anonymous:../../gcc/gcc/config/aarch64/aarch64-builtins.cc:1844"
-  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 1847)
+ (!type struct 1931 nil  gc_used "anonymous:../../gcc/gcc/config/aarch64/aarch64-builtins.cc:1840"
+  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 1843)
   (!fields 2 
    (!pair  "ftype"
     (!type already_seen 23)
-    (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 1845)
+    (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 1841)
     nil )
    (!pair  "icode"
     (!type already_seen 2)
-    (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 1846)
+    (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 1842)
     nil )
   )
   nil 4095 nil nil )
  
- (!type struct 1932 nil  gc_unused "anonymous:../../gcc/gcc/config/aarch64/aarch64-builtins.cc:1890"nil 
+ (!type struct 1932 nil  gc_unused "anonymous:../../gcc/gcc/config/aarch64/aarch64-builtins.cc:1886"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -32531,15 +32531,15 @@
    (!type already_seen 2391)
   )
   gc_pointed_to "hash_map<tree,tree_pair_p>"
-  (!srcfileloc  "cp/pt.cc" 30752)
+  (!srcfileloc  "cp/pt.cc" 30764)
   (!fields 2 
    (!pair  "tree_pair_p"
     (!type already_seen 588)
-    (!srcfileloc  "cp/pt.cc" 30752)
+    (!srcfileloc  "cp/pt.cc" 30764)
     nil )
    (!pair  "tree"
     (!type already_seen 23)
-    (!srcfileloc  "cp/pt.cc" 30752)
+    (!srcfileloc  "cp/pt.cc" 30764)
     nil )
   )
  )
@@ -34399,7 +34399,7 @@
   nil )
  (!pair  "hash_map<tree,tree_pair_p>"
   (!type already_seen 2391)
-  (!srcfileloc  "cp/pt.cc" 30752)
+  (!srcfileloc  "cp/pt.cc" 30764)
   nil )
  (!pair  "pending_template"
   (!type already_seen 2373)
@@ -35245,11 +35245,11 @@
   nil )
  (!pair  "builtin_simd_arg"
   (!type already_seen 2)
-  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 2140)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 2258)
   nil )
  (!pair  "ls64_builtins_data"
   (!type already_seen 1932)
-  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 1894)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 1890)
   nil )
  (!pair  "aarch64_simd_type_info"
   (!type already_seen 1925)
@@ -39560,7 +39560,7 @@
   nil )
  (!pair  "dguide_cache"
   (!type already_seen 2392)
-  (!srcfileloc  "cp/pt.cc" 30752)
+  (!srcfileloc  "cp/pt.cc" 30764)
   (!options 
    (!option deletable string  "")
   )
@@ -40538,13 +40538,13 @@
   nil )
  (!pair  "ls64_arm_data_t"
   (!type already_seen 23)
-  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 1896)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 1892)
   nil )
  (!pair  "aarch64_memtag_builtin_data"
   (!type array 2605 nil  gc_used "AARCH64_MEMTAG_BUILTIN_END -\n\t\t\t      AARCH64_MEMTAG_BUILTIN_START - 1" 
    (!type already_seen 1931)
   )
-  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 1847)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.cc" 1843)
   nil )
  (!pair  "aarch64_simd_intXI_type_node"
   (!type already_seen 23)
@@ -40830,7 +40830,7 @@
   nil )
  (!pair  "tmp_var_id_num"
   (!type already_seen 2)
-  (!srcfileloc  "gimple-expr.cc" 421)
+  (!srcfileloc  "gimple-expr.cc" 419)
   nil )
  (!pair  "stmt_list_cache"
   (!type already_seen 85)
