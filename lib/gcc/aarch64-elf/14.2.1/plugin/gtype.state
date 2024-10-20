@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "14.2.1 20241012 (Stable)")
+(!version  "14.2.1 20241019 (Stable)")
 (!srcdir  "../../gcc/gcc")
 (!languages 12 ada c cp d fortran go jit lto m2 objc objcp rust)
 (!fileslist 249 0
@@ -27288,7 +27288,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1759 nil  gc_unused "anonymous:../../gcc/gcc/config/aarch64/aarch64.cc:19693"nil 
+ (!type struct 1759 nil  gc_unused "anonymous:../../gcc/gcc/config/aarch64/aarch64.cc:19694"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -32531,15 +32531,15 @@
    (!type already_seen 2391)
   )
   gc_pointed_to "hash_map<tree,tree_pair_p>"
-  (!srcfileloc  "cp/pt.cc" 30793)
+  (!srcfileloc  "cp/pt.cc" 30798)
   (!fields 2 
    (!pair  "tree_pair_p"
     (!type already_seen 588)
-    (!srcfileloc  "cp/pt.cc" 30793)
+    (!srcfileloc  "cp/pt.cc" 30798)
     nil )
    (!pair  "tree"
     (!type already_seen 23)
-    (!srcfileloc  "cp/pt.cc" 30793)
+    (!srcfileloc  "cp/pt.cc" 30798)
     nil )
   )
  )
@@ -34399,7 +34399,7 @@
   nil )
  (!pair  "hash_map<tree,tree_pair_p>"
   (!type already_seen 2391)
-  (!srcfileloc  "cp/pt.cc" 30793)
+  (!srcfileloc  "cp/pt.cc" 30798)
   nil )
  (!pair  "pending_template"
   (!type already_seen 2373)
@@ -35649,11 +35649,11 @@
   nil )
  (!pair  "aarch64_fmv_feature_datum"
   (!type already_seen 1759)
-  (!srcfileloc  "config/aarch64/aarch64.cc" 19697)
+  (!srcfileloc  "config/aarch64/aarch64.cc" 19698)
   nil )
  (!pair  "aarch64_fmv_feature_mask"
   (!type already_seen 2)
-  (!srcfileloc  "config/aarch64/aarch64.cc" 19690)
+  (!srcfileloc  "config/aarch64/aarch64.cc" 19691)
   nil )
  (!pair  "aarch64_cc"
   (!type already_seen 2)
@@ -39560,21 +39560,21 @@
   nil )
  (!pair  "dguide_cache"
   (!type already_seen 2392)
-  (!srcfileloc  "cp/pt.cc" 30793)
+  (!srcfileloc  "cp/pt.cc" 30798)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "explicit_specifier_map"
   (!type already_seen 1016)
-  (!srcfileloc  "cp/pt.cc" 14397)
+  (!srcfileloc  "cp/pt.cc" 14402)
   (!options 
    (!option cache string  "")
   )
  )
  (!pair  "defarg_inst"
   (!type already_seen 1633)
-  (!srcfileloc  "cp/pt.cc" 14259)
+  (!srcfileloc  "cp/pt.cc" 14264)
   (!options 
    (!option cache string  "")
   )
@@ -40107,7 +40107,7 @@
   nil )
  (!pair  "default_arg_context"
   (!type already_seen 85)
-  (!srcfileloc  "cp/call.cc" 9300)
+  (!srcfileloc  "cp/call.cc" 9304)
   nil )
  (!pair  "unemitted_tinfo_decls"
   (!type already_seen 85)
@@ -40720,25 +40720,25 @@
   nil )
  (!pair  "aarch64_sls_shared_thunks_needed"
   (!type already_seen 2)
-  (!srcfileloc  "config/aarch64/aarch64.cc" 29100)
+  (!srcfileloc  "config/aarch64/aarch64.cc" 29101)
   nil )
  (!pair  "aarch64_sls_shared_thunks"
   (!type array 2616 nil  gc_used "30" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "config/aarch64/aarch64.cc" 29099)
+  (!srcfileloc  "config/aarch64/aarch64.cc" 29100)
   nil )
  (!pair  "va_list_type"
   (!type already_seen 23)
-  (!srcfileloc  "config/aarch64/aarch64.cc" 21069)
+  (!srcfileloc  "config/aarch64/aarch64.cc" 21070)
   nil )
  (!pair  "aarch64_previous_fndecl"
   (!type already_seen 23)
-  (!srcfileloc  "config/aarch64/aarch64.cc" 19023)
+  (!srcfileloc  "config/aarch64/aarch64.cc" 19024)
   nil )
  (!pair  "tls_get_addr_libfunc"
   (!type already_seen 123)
-  (!srcfileloc  "config/aarch64/aarch64.cc" 2791)
+  (!srcfileloc  "config/aarch64/aarch64.cc" 2792)
   nil )
  (!pair  "stack_chk_fail_decl"
   (!type already_seen 23)
